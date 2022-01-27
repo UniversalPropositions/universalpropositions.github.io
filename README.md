@@ -9,3 +9,5 @@ Serve:
 ```
 bundle exec jekyll serve
 ```
+Visit: http://localhost:4000
+
