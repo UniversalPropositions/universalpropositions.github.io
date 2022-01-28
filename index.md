@@ -1,4 +1,4 @@
-Prop---
+---
 title: "Universal PropBank 2.0"
 keywords: sample homepage
 tags: [getting_started]
