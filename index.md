@@ -3,7 +3,7 @@ title: "Universal Proposition Banks"
 keywords: sample homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
-permalink: index.html
+permalink: index.html#
 summary: This project aims to annotate text in different languages with a layer of "universal" semantic role labeling annotation. For this purpose, we use the frame and role labels of the English Proposition Bank to label shallow semantics in sentences in new target languages.
 ---
 
