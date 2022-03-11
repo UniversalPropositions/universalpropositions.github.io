@@ -1,4 +1,4 @@
-repository: tomjoht/documentation-theme-jekyll
+repository: ijindal/UP.github.io
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
@@ -91,7 +91,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true
+      comments: false
       # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
       search: true
       sidebar: home_sidebar
