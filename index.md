@@ -13,13 +13,13 @@ summary: This project aims to annotate text in different languages with a layer 
 These is release 2.0 of the Universal Proposition Banks (UP). It is built upon [release 2.9 of the Universal Dependency Treebanks](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-4611) and inherits their [licence](https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.9). We use the frame and role labels from the [English Proposition Bank](http://propbank.github.io/) version [3.0](https://github.com/propbank/propbank-documentation/blob/master/other-documentation/Description-of-PB3-changes.md).
 
 
-**News (01/01/2022)**: Freezing UP1.0 ! 
+**News (2022/01/01)**: Freezing UP1.0 ! 
 
-**News (10/01/2019)**: Two domain-specific Propbank released ([Contract](https://developer.ibm.com/exchanges/data/all/contracts-proposition-bank/), [Finance](https://developer.ibm.com/exchanges/data/all/finance-proposition-bank/))! 
+**News (2019/10/01)**: Two domain-specific Propbank released ([Contract](https://developer.ibm.com/exchanges/data/all/contracts-proposition-bank/), [Finance](https://developer.ibm.com/exchanges/data/all/finance-proposition-bank/))! 
 
-**News (02/10/2017)**: Initial version of Italian UP released!
+**News (2017/02/10)**: Initial version of Italian UP released!
 
-**News (01/31/2017)**: Initial versions of Finnish, Portuguese and Spanish UP released!
+**News (2017/01/31)**: Initial versions of Finnish, Portuguese and Spanish UP released!
 
 
 ## Multilingual SRL 
