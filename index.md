@@ -5,6 +5,7 @@ tags: [getting_started]
 sidebar: mydoc_sidebar
 permalink: index.html
 summary: This project aims to annotate text in different languages with a layer of "universal" semantic role labeling annotation. For this purpose, we use the frame and role labels of the English Proposition Bank to label shallow semantics in sentences in new target languages.
+hide_sidebar: true
 ---
 
 
@@ -112,7 +113,7 @@ This is an ongoing project which we are improving along three lines: (1) We are 
 
 * [Ishan Jindal](https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Ishan.Jindal), IBM Research - Almaden
 * [Alexandre Rademaker](http://researcher.ibm.com/researcher/view.php?person=br-alexrad), IBM Research - Brazil
-* [Michał Ulewicz](), Kyndryl - Poland
+* Michał Ulewicz, Kyndryl - Poland
 * [Alan Akbik](http://alanakbik.github.io/), Humboldt-Universität zu Berlin, Germany
 * [Laura Chiticariu](http://researcher.watson.ibm.com/researcher/view.php?person=us-chiti), IBM Watson
 * [Marina Danilevsky](http://researcher.watson.ibm.com/researcher/view.php?person=us-mdanile), IBM Research - Almaden
