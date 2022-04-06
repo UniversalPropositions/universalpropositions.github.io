@@ -8,6 +8,7 @@ summary: This project aims to annotate text in different languages with a layer 
 hide_sidebar: true
 ---
 
+![UP: logo](https://ijindal.github.io/universalpropositions.github.io/images/Universal_PropBank_Rev3.jpg "logo") 
 
 # Release
 
