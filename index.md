@@ -86,8 +86,16 @@ This is an ongoing research project in which we use a combination of data-driven
 
 This is an ongoing project which we are improving along three lines: (1) We are working on adding new languages to the current release. (2) We are working to curate the data to improve the quality of SRL annotation. (3) We are looking into extending the scope of frame-evoking-elements to other types of predicates besides verbs. (4) We will migrate the data to newer UD standard. 
 
-
 ## Publications
+
+### Citing UP in papers
+If you use UP in your work, please cite these papers:
+
+[Universal Proposition Bank 2.0](). Ishan Jindal, Alexandre Rademaker, Michał Ulewicz, NGUYEN Thi Minh Huyen, HA My Linh, Khoi-Nguyen Tran, Huaiyu Zhu and Yunyao Li. *LREC2022.
+
+[Generating High Quality Proposition Banks for Multilingual Semantic Role Labeling](http://alanakbik.github.io/papers/acl2015.pdf). Alan Akbik, Laura Chiticariu, Marina Danilevsky, Yunyao Li, Shivakumar Vaithyanathan and Huaiyu Zhu. *53rd Annual Meeting of the Association for Computational Linguistics* ACL 2015.
+
+### Other Publications
 
 [Learning Explainable Linguistic Expressions with Neural Inductive Logic Programming for Sentence Classification](https://www.aclweb.org/anthology/2020.emnlp-main.345/). Prithviraj Sen, Marina Danilevsky, Yunyao Li, Siddhartha Brahma, Matthias Boehm, Laura Chiticariu and Rajasekar Krishnamurthy. *2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)* EMNLP 2020.
 
@@ -111,9 +119,8 @@ This is an ongoing project which we are improving along three lines: (1) We are 
 
 [Polyglot: Multilingual Semantic Role Labeling with Unified Labels](http://alanakbik.github.io/papers/acl2016-demo.pdf). Alan Akbik and Yunyao Li. *54th Annual Meeting of the Association for Computational Linguistics* ACL 2016.
 
-[Generating High Quality Proposition Banks for Multilingual Semantic Role Labeling](http://alanakbik.github.io/papers/acl2015.pdf). Alan Akbik, Laura Chiticariu, Marina Danilevsky, Yunyao Li, Shivakumar Vaithyanathan and Huaiyu Zhu. *53rd Annual Meeting of the Association for Computational Linguistics* ACL 2015.
 
-## Preprint
+### Preprints
 [Improved Semantic Role Labeling using Parameterized Neighborhood Memory Adaptation](https://arxiv.org/pdf/2011.14459.pdf). Ishan Jindal, Ranit Aharonov, Siddhartha Brahma, Huaiyu Zhu and Yunyao Li. *arXiv preprint arXiv:2011.14459*
 
 
@@ -122,9 +129,9 @@ This is an ongoing project which we are improving along three lines: (1) We are 
 
 ### Core Team
 
-* [Ishan Jindal](https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Ishan.Jindal), IBM Research - Almaden
+* [Ishan Jindal](https://ijindal.github.io/), IBM Research - Almaden
 * [Alexandre Rademaker](http://researcher.ibm.com/researcher/view.php?person=br-alexrad), IBM Research - Brazil
-* Michał Ulewicz, Kyndryl - Poland
+* Michał Ulewicz, Kyndryl, Poland
 * [Alan Akbik](http://alanakbik.github.io/), Humboldt-Universität zu Berlin, Germany
 * [Laura Chiticariu](http://researcher.watson.ibm.com/researcher/view.php?person=us-chiti), IBM Watson
 * [Marina Danilevsky](http://researcher.watson.ibm.com/researcher/view.php?person=us-mdanile), IBM Research - Almaden
