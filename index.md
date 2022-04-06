@@ -1,5 +1,5 @@
 ---
-title: "Universal Proposition Banks"
+title: ""
 keywords: sample homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
@@ -8,14 +8,12 @@ summary: This project aims to annotate text in different languages with a layer 
 hide_sidebar: true
 ---
 
-![UP: logo](https://universalpropositions.github.io/images/Universal_PropBank_Rev3.png) 
-
 # Release
 
 These is release 2.0 of the Universal Proposition Banks (UP). It is built upon [release 2.9 of the Universal Dependency Treebanks](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-4611) and inherits their [licence](https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.9). We use the frame and role labels from the [English Proposition Bank](http://propbank.github.io/) version [3.0](https://github.com/propbank/propbank-documentation/blob/master/other-documentation/Description-of-PB3-changes.md).
 
 
-**News (2022/01/01)**: Freezing UP1.0 ! 
+**News (2022/01/01)**: UP1.0 Freeze ! 
 
 **News (2019/10/01)**: Two domain-specific Propbank released ([Contract](https://developer.ibm.com/exchanges/data/all/contracts-proposition-bank/), [Finance](https://developer.ibm.com/exchanges/data/all/finance-proposition-bank/))! 
 
@@ -33,7 +31,7 @@ Using this data, we can create SRL systems that predict English PropBank labels 
 
 This project aims to annotate text in different languages with a layer of "universal" semantic role labeling annotation. For this purpose, we use the frame and role labels of the English Proposition Bank to label shallow semantics in sentences in new target languages. 
 
-For instance, consider the German sentence "Seine Arbeit wird von ehrenamtlichen Helfern und Regionalgruppen des Vereins unterstützt" (_His work is supported by volunteers and regional groupings of the association_). In CoNLL format, it looks like this, with English PropBank labels in the last two columns:
+For instance, consider the German sentence "Seine Arbeit wird von ehrenamtlichen Helfern und Regionalgruppen des Vereins unterstützt" (_His work is supported by volunteers and regional groupings of the association_). In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last two columns:
 
 | Id | Form | POS | HeadId | Deprel | Frame | Role |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -54,12 +52,25 @@ The German verb 'unterstützt' is labeled as evoking the '**support.01**' frame 
 
 
 ### Format 
+#### Data
+The universal propbank (UP) for each language consists of three files (training, dev and test data) with the extension `.conllup`.
 
-The universal propbank (UP) for each language consists of three files (training, dev and test data) with the extension `.conllu` but currently encoding an extension of the [CoNLL-U format](http://universaldependencies.org/format.html). The extension is based on the CoNLL format produced by the [Propbank conversion scripts](https://github.com/propbank/propbank-release/blob/master/docs/conll-conversion-notes.md), called `.gold_conll`. 
+<!-- but currently encoding an extension of the [CoNLL-U format](http://universaldependencies.org/format.html). The extension is based on the CoNLL format produced by the [Propbank conversion scripts](https://github.com/propbank/propbank-release/blob/master/docs/conll-conversion-notes.md), called `.gold_conll`.  -->
 
-Besides the original 10 columns from the CoNLL-U format, the roleset column (column 11) gives the actual sense used, and that sense provides roleset specific meanings for each of the numbered arguments. Every column after the eleventh is a predicate, in order that they appear in the sentence. Note that the Propbank `.gold_conll` files contain a "frame file" column (column 11) that lets you know which ".xml" [file](https://github.com/propbank/propbank-frames/) contains the actual semantic form for the predicate in question (which is not always the same as the predicate: one must reference "lighten.xml" for lighten_up.02), but since all predicate identifier is unique, we haven't preserved this column.
+Besides the original 10 columns from the CoNLL-U format (can be obtained from UD), we only provide the four columns ID UP:PRED, UP:ARGHEADS, and UP:ARGSPANS.
+- ID is the token id consistent with corresponding UD sentence.
+- UP:PRED is the roleset column (column 11) gives the actual EN propbank sense used, and that sense provides roleset specific meanings for each of the numbered arguments. 
+- UP:ARGHEADS is the argument head column (column 12) provides a link to the arguments head to predicate. Each argument head is pipe `|` separated, with the arg files linked to token id.
+- UP:ARGSPANS is the argument span column (column 12) provides a link to the arguments span to predicate. Each argument span is pipe `|` separated, with the arg files linked to range of token ids.
 
-The English dataset was the only one obtained in a different maner. See the README.org file in that directory for information.
+We provide a python script that given a UD_file and UP_file combines them and writes a 14 column `.conllup` format.
+
+<!-- - Every column after the eleventh is a predicate, in order that they appear in the sentence. Note that the Propbank `.gold_conll` files contain a "frame file" column (column 11) that lets you know which ".xml" [file](https://github.com/propbank/propbank-frames/) contains the actual semantic form for the predicate in question (which is not always the same as the predicate: one must reference "lighten.xml" for lighten_up.02), but since all predicate identifier is unique, we haven't preserved this column. -->
+
+#### Repository
+A UP release contains treebanks of the corresponding UD release. Since UP is automatically generated silver data we also release hand annotated EN srl labels for a subset of the lanaguges to facilitae the research community to perform fair evaluation of their multilingual and cross-lingual SRL systems. To differenciate Gold from UP data we use the following conventions:
+- `UP_<langauge>-<corpus>`
+- `GOLD__<langauge>-<corpus>`
 
 In addition, each language has a folder with verb overview files (produced from the frame files) in html format. These files can be viewed in a browser and give an overview of all English frames that each target language verb can evoke.
 
@@ -69,7 +80,7 @@ Our current focus is to annotate all target language verbs with appropriate Engl
 
 ### A note on quality 
 
-This is an ongoing research project in which we use a combination of data-driven methods and some post-processing to generate these resources. This means that the labels in the UPs are mostly predicted over models trained on a different domain, which affects the quality. A good example is the German verb "angeben" which in our source data was mostly used in the "brag.01" sense, but in the German UD data is mostly used in the "report.01" sense, but almost never detected as such.
+This is an ongoing research project in which we use a combination of data-driven methods and some post-processing to generate these resources. This means that the labels in the UPs are mostly predicted over models trained on a different domain, which affects the quality. A good example is the German verb "angeben" which in our source data was mostly used in the "brag.01" sense, but in the German UD data is mostly used in the "report.01" sense, but almost never detected as such. We provide the langauges specific observation in their respective README files. 
 
 ## Current and future work
 
@@ -104,7 +115,6 @@ This is an ongoing project which we are improving along three lines: (1) We are 
 
 ## Preprint
 [Improved Semantic Role Labeling using Parameterized Neighborhood Memory Adaptation](https://arxiv.org/pdf/2011.14459.pdf). Ishan Jindal, Ranit Aharonov, Siddhartha Brahma, Huaiyu Zhu and Yunyao Li. *arXiv preprint arXiv:2011.14459*
-
 
 
 ## People
