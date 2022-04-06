@@ -82,6 +82,17 @@ Our current focus is to annotate all target language verbs with appropriate Engl
 
 This is an ongoing research project in which we use a combination of data-driven methods and some post-processing to generate these resources. This means that the labels in the UPs are mostly predicted over models trained on a different domain, which affects the quality. A good example is the German verb "angeben" which in our source data was mostly used in the "brag.01" sense, but in the German UD data is mostly used in the "report.01" sense, but almost never detected as such. We provide the langauges specific observation in their respective README files. 
 
+## Impact 
+### Business Impact: 
+- (1) Foundation for Expanded Shallow Semantic Parsing (ESSP), a major differientiating advanced NLP primitive in Watson NLP, an embedding NLP library used widely within IBM products and solutions; 
+- (2) Powers multiple IBM products and solutions such as Watson Discovery and AIOps.
+
+### Scientific Impact: 
+- (1) Public dataset; 
+- (2) Multiple research papers on data generation, curation, model building at top NLP conferences; 
+- (3) More to come in the near future.
+
+
 ## Current and future work
 
 This is an ongoing project which we are improving along three lines: (1) We are working on adding new languages to the current release. (2) We are working to curate the data to improve the quality of SRL annotation. (3) We are looking into extending the scope of frame-evoking-elements to other types of predicates besides verbs. (4) We will migrate the data to newer UD standard. 
