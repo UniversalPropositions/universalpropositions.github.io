@@ -33,6 +33,17 @@ Using this data, we can create SRL systems that predict English PropBank labels 
 
 This project aims to annotate text in different languages with a layer of "universal" semantic role labeling annotation. For this purpose, we use the frame and role labels of the English Proposition Bank to label shallow semantics in sentences in new target languages. 
 
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="noCrossRef" href="#german" data-toggle="tab">German</a></li>
+    <li><a class="noCrossRef" href="#french" data-toggle="tab">French</a></li>
+    <li><a class="noCrossRef" href="#hindi" data-toggle="tab">Hindi</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="german" markdown="1">
+  
+## German
+
+
 For instance, consider the German sentence "Seine Arbeit wird von ehrenamtlichen Helfern und Regionalgruppen des Vereins unterstützt" (_His work is supported by volunteers and regional groupings of the association_). In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last two columns:
 
 | Id | Form | POS | HeadId | Deprel | Frame | Role |
@@ -51,6 +62,19 @@ For instance, consider the German sentence "Seine Arbeit wird von ehrenamtlichen
 | 12 | . | PUNCT | 11 | punct | _ | _ |
 
 The German verb 'unterstützt' is labeled as evoking the '**support.01**' frame with two roles: "Seine Arbeit" (_his work_) is labeled **A1** (project being supported) and "ehrenamtlichen Helfern und Regionalgruppen des Vereins" (_volunteers and regional groupings of the association_) is labeled **A0** (the helper). 
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="french">
+    <h2>French</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel sollicitudin felis. Sed eu arcu sed ipsum semper luctus eu a tortor. Suspendisse id leo eu metus laoreet varius. Mauris consequat accumsan ex, a iaculis metus fermentum a. Praesent sit amet fermentum leo. Aliquam feugiat, nibh in u ltrices mattis, felis ipsum venenatis metus, vel vehicula libero mauris a enim. Sed placerat est ac lectus vestibulum tempor. Quisque ut condimentum massa. Proin venenatis leo id urna cursus blandit. Vivamus sit amet hendrerit metus.about</p></div>
+
+<div role="tabpanel" class="tab-pane" id="hindi">
+    <h2>Hindi</h2>
+    <p>Vel vehicula libero mauris a enim. Sed placerat est ac lectus vestibulum tempor. Quisque ut condimentum massa. Proin venenatis leo id urna cursus blandit. Vivamus sit amet hendrerit metus.</p>
+</div>
+</div>
+
 
 
 ### Format 
