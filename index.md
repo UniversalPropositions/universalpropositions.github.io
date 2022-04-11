@@ -33,6 +33,8 @@ Using this data, we can create SRL systems that predict English PropBank labels 
 
 This project aims to annotate text in different languages with a layer of "universal" semantic role labeling annotation. For this purpose, we use the frame and role labels of the English Proposition Bank to label shallow semantics in sentences in new target languages. 
 
+For instance, consider the following sentences from different langauges: 
+
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#german" data-toggle="tab">German</a></li>
     <li><a class="noCrossRef" href="#french" data-toggle="tab">French</a></li>
@@ -43,8 +45,9 @@ This project aims to annotate text in different languages with a layer of "unive
   
 ## German
 
-
-For instance, consider the German sentence "Seine Arbeit wird von ehrenamtlichen Helfern und Regionalgruppen des Vereins unterstützt" (_His work is supported by volunteers and regional groupings of the association_). In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last two columns:
+- Sentence: `Seine Arbeit wird von ehrenamtlichen Helfern und Regionalgruppen des Vereins unterstützt`
+- (_His work is supported by volunteers and regional groupings of the association_). 
+- In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last two columns:
 
 | Id | Form | POS | HeadId | Deprel | Frame | Role |
 | --- | --- | --- | --- | --- | --- | --- |
