@@ -73,7 +73,7 @@ The German verbs
 <!-- <div role="tabpanel" class="tab-pane" id="french">
     <h2>French</h2> -->
     
-<div role="tabpanel" class="tab-pane active" id="french" markdown="1">
+<div role="tabpanel" class="tab-pane" id="french">
     
 - Sentence: `Elle lutte pour échapper aux tueurs à ses trousses.`(_She struggles to escape the killers chasing her._). 
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
@@ -102,7 +102,7 @@ The French verbs
     
 <!-- <div role="tabpanel" class="tab-pane" id="hindi">
     <h2>Hindi</h2> -->
-<div role="tabpanel" class="tab-pane active" id="french" markdown="1">
+<div role="tabpanel" class="tab-pane" id="hindi">
     
 - Sentence: `कुशीनगर की सीमा में प्रवेश करते ही भव्‍य प्रवेशद्वार आपका स्वागत करता है ।`(_The grand entrance welcomes you as you enter the limits of Kushinagar._). 
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
