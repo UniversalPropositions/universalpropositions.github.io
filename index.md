@@ -49,22 +49,20 @@ For instance, consider the following sentences from different langauges:
 ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS
 -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
 1 | Ich | ich | PRON | PPER | _ | 2 | nsubj | _ | _ | _
-2 | hatte | haben | VERB | VAFIN | _ | 0 | root | have.03 | A0:1\|A1:3 | A0:1-1\|A1:3-3
+2 | hatte | haben | VERB | VAFIN | _ | 0 | root | [have.03](https://verbs.colorado.edu/propbank/framesets-english-aliases/have.html) | A0:1\|A1:3 | A0:1-1\|A1:3-3
 3 | Gelegenheit | Gelegenheit | NOUN | NN | _ | 2 | obj | _ | _ | _
 4 | eines | ein | DET | PIS | _ | 6 | det | _ | _ | _
 5 | seiner | sein | DET | PPOSAT | _ | 6 | det:poss | _ | _ | _
 6 | Seminare | Seminar | NOUN | NN | _ | 8 | obj | _ | _ | _
 7 | zu | zu | PART | PTKZU | _ | 8 | mark | _ | _ | _
-8 | besuchen | besuchen | VERB | VVINF | _ | 3 | xcomp | attend.01 | A0:1\|A1:4 | A0:1-1\|A1:4-6
+8 | besuchen | besuchen | VERB | VVINF | _ | 3 | xcomp | [attend.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/attend.html) | A0:1\|A1:4 | A0:1-1\|A1:4-6
 9 | . | . | PUNCT | $. | _ | 2 | punct | _ | _ | _
 
 The German verbs
 - 'hatte' is labeled as evoking the '**have.03**' frame with two roles: "Ich" (_I_) is labeled **A0** (owner) and "Gelegenheit" (_opportunity_) is labeled **A1** (possession). 
-- 'besuchen' is labeld as evoking the '**attend.01**' frame with two roles: "Ich" (_I_) is labeled **A0** (thing attending) and "eines seiner Seminare" (_one of his seminars_) is labeled **A1** (thing attended).
-</div>
+- 'besuchen' is labeld as evoking the '**attend.01**' frame with two roles: "Ich" (_I_) is labeled **A0** (thing attending) and "eines seiner Seminare" (_one of his seminars_) is labeled **A1** (thing attended).</div>
 
 <div role="tabpanel" class="tab-pane" id="french">
-    
 - Sentence: `Elle lutte pour échapper aux tueurs à ses trousses.`(_She struggles to escape the killers chasing her._)
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
 
@@ -90,7 +88,6 @@ The French verbs
     
 <div role="tabpanel" class="tab-pane" id="hindi">
 <!--     <h2>Hindi</h2> -->
-    
 - Sentence: `कुशीनगर की सीमा में प्रवेश करते ही भव्‍य प्रवेशद्वार आपका स्वागत करता है ।`(_The grand entrance welcomes you as you enter the limits of Kushinagar._). 
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
 
@@ -113,7 +110,6 @@ ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS 
 
 The Hindi verbs
 - 'करते' is labeled as evoking the '**enter.01**' frame with one role: "कुशीनगर की सीमा" (_kushinagar border_) is labeled **A1** (place or thing entered). 
-
 </div>
 </div>
 
