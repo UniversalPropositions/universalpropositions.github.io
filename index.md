@@ -43,10 +43,9 @@ For instance, consider the following sentences from different langauges:
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="german" markdown="1">
-  
+
 - Sentence: `Ich hatte Gelegenheit eines seiner Seminare zu besuchen.`(_I had the opportunity to attend one of his seminars._). 
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
-
 
 ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS
 -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
@@ -60,7 +59,6 @@ ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS 
 8 | besuchen | besuchen | VERB | VVINF | _ | 3 | xcomp | attend.01 | A0:1\|A1:4 | A0:1-1\|A1:4-6
 9 | . | . | PUNCT | $. | _ | 2 | punct | _ | _ | _
 
-
 The German verbs
 - 'hatte' is labeled as evoking the '**have.03**' frame with two roles: "Ich" (_I_) is labeled **A0** (owner) and "Gelegenheit" (_opportunity_) is labeled **A1** (possession). 
 - 'besuchen' is labeld as evoking the '**attend.01**' frame with two roles: "Ich" (_I_) is labeled **A0** (thing attending) and "eines seiner Seminare" (_one of his seminars_) is labeled **A1** (thing attended). 
@@ -68,63 +66,56 @@ The German verbs
 </div>
 
 <div role="tabpanel" class="tab-pane" id="french">
-<!--     <h2>French</h2> -->
     
-    
-- Sentence: `Elle lutte pour échapper aux tueurs à ses trousses.`(_She struggles to escape the killers chasing her._). 
-- In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
+    - Sentence: `Elle lutte pour échapper aux tueurs à ses trousses.`(_She struggles to escape the killers chasing her._)
+    - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
 
+    ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS
+    -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
+    1 | Elle | il | PRON | _ | _ | 2 | nsubj | _ | _ | _
+    2 | lutte | lutter | VERB | _ | _ | 0 | root | [struggle.02](https://verbs.colorado.edu/propbank/framesets-english-aliases/struggle.html) | A0:1\|A1:4 | A0:1-1\|A1:3-10
+    3 | pour | pour | ADP | _ | _ | 4 | mark | _ | _ | _
+    4 | échapper | échapper | VERB | _ | _ | 2 | advcl | [escape.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/escape.html) | A0:1\|A1:7 | A0:1-1\|A1:6-7
+    5-6 | aux | _ | _ | _ | _ | _ | _ | _ | _ | _
+    5 | à | à | ADP | _ | _ | 7 | case | _ | _ | _
+    6 | les | le | DET | _ | _ | 7 | det | _ | _ | _
+    7 | tueurs | tueur | NOUN | _ | _ | 4 | obl:arg | _ | _ | _
+    8 | à | à | ADP | _ | _ | 10 | case | _ | _ | _
+    9 | ses | son | DET | _ | _ | 10 | det | _ | _ | _
+    10 | trousses | trousses | NOUN | _ | _ | 4 | obl:mod | _ | _ | _
+    11 | . | . | PUNCT | _ | _ | 2 | punct | _ | _ | _
 
-ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS
--- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
-1 | Elle | il | PRON | _ | _ | 2 | nsubj | _ | _ | _
-2 | lutte | lutter | VERB | _ | _ | 0 | root | [struggle.02](https://verbs.colorado.edu/propbank/framesets-english-aliases/struggle.html) | A0:1\|A1:4 | A0:1-1\|A1:3-10
-3 | pour | pour | ADP | _ | _ | 4 | mark | _ | _ | _
-4 | échapper | échapper | VERB | _ | _ | 2 | advcl | [escape.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/escape.html) | A0:1\|A1:7 | A0:1-1\|A1:6-7
-5-6 | aux | _ | _ | _ | _ | _ | _ | _ | _ | _
-5 | à | à | ADP | _ | _ | 7 | case | _ | _ | _
-6 | les | le | DET | _ | _ | 7 | det | _ | _ | _
-7 | tueurs | tueur | NOUN | _ | _ | 4 | obl:arg | _ | _ | _
-8 | à | à | ADP | _ | _ | 10 | case | _ | _ | _
-9 | ses | son | DET | _ | _ | 10 | det | _ | _ | _
-10 | trousses | trousses | NOUN | _ | _ | 4 | obl:mod | _ | _ | _
-11 | . | . | PUNCT | _ | _ | 2 | punct | _ | _ | _
-
-The French verbs
-- 'lutte' is labeled as evoking the '**struggle.02**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity trying) and "pour échapper aux tueurs à ses trousses" (_to escape the killers on his trail._) is labeled **A1** (predicative action). 
-- 'besuchen' is labeld as evoking the '**escape.01**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity escaping) and "les tueurs" (_the killers_) is labeled **A1** (place or thing escaped). 
+    The French verbs
+    - 'lutte' is labeled as evoking the '**struggle.02**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity trying) and "pour échapper aux tueurs à ses trousses" (_to escape the killers on his trail._) is labeled **A1** (predicative action). 
+    - 'besuchen' is labeld as evoking the '**escape.01**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity escaping) and "les tueurs" (_the killers_) is labeled **A1** (place or thing escaped). 
     
 </div>
     
 <div role="tabpanel" class="tab-pane" id="hindi">
 <!--     <h2>Hindi</h2> -->
     
-- Sentence: `कुशीनगर की सीमा में प्रवेश करते ही भव्‍य प्रवेशद्वार आपका स्वागत करता है ।`(_The grand entrance welcomes you as you enter the limits of Kushinagar._). 
-- In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
+    - Sentence: `कुशीनगर की सीमा में प्रवेश करते ही भव्‍य प्रवेशद्वार आपका स्वागत करता है ।`(_The grand entrance welcomes you as you enter the limits of Kushinagar._). 
+    - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
 
+    ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS
+    -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
+    1 | कुशीनगर | कुशीनगर | PROPN | NNP | _ | 3 | nmod | _ | _ | _
+    2 | की | का | ADP | PSP | _ | 1 | case | _ | _ | _
+    3 | सीमा | सीमा | NOUN | NN | _ | 6 | obl | _ | _ | _
+    4 | में | में | ADP | PSP | _ | 3 | case | _ | _ | _
+    5 | प्रवेश | प्रवेश | NOUN | NN | _ | 6 | compound | _ | _ | _
+    6 | करते | कर | VERB | VM | _ | 12 | advcl | [enter.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/enter.html) | A1:3 | A1:1-3
+    7 | ही | ही | PART | RP | _ | 6 | dep | _ | _ | _
+    8 | भव्‍य | भव् | ADJ | JJ | _ | 9 | amod | _ | _ | _
+    9 | प्रवेशद्वार | प्रवेशद्वार | NOUN | NN | _ | 12 | nsubj | _ | _ | _
+    10 | आपका | आप | PRON | PRP | _ | 11 | nmod | _ | _ | _
+    11 | स्वागत | स्वागत | NOUN | NN | _ | 12 | compound | _ | _ | _
+    12 | करता | कर | VERB | VM | _ | 0 | root | _ | _ | _
+    13 | है | है | AUX | VAUX | _ | 12 | aux | _ | _ | _
+    14 | । | । | PUNCT | SYM | _ | 12 | punct | _ | _ | _
 
-
-ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS
--- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
-1 | कुशीनगर | कुशीनगर | PROPN | NNP | _ | 3 | nmod | _ | _ | _
-2 | की | का | ADP | PSP | _ | 1 | case | _ | _ | _
-3 | सीमा | सीमा | NOUN | NN | _ | 6 | obl | _ | _ | _
-4 | में | में | ADP | PSP | _ | 3 | case | _ | _ | _
-5 | प्रवेश | प्रवेश | NOUN | NN | _ | 6 | compound | _ | _ | _
-6 | करते | कर | VERB | VM | _ | 12 | advcl | [enter.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/enter.html) | A1:3 | A1:1-3
-7 | ही | ही | PART | RP | _ | 6 | dep | _ | _ | _
-8 | भव्‍य | भव् | ADJ | JJ | _ | 9 | amod | _ | _ | _
-9 | प्रवेशद्वार | प्रवेशद्वार | NOUN | NN | _ | 12 | nsubj | _ | _ | _
-10 | आपका | आप | PRON | PRP | _ | 11 | nmod | _ | _ | _
-11 | स्वागत | स्वागत | NOUN | NN | _ | 12 | compound | _ | _ | _
-12 | करता | कर | VERB | VM | _ | 0 | root | _ | _ | _
-13 | है | है | AUX | VAUX | _ | 12 | aux | _ | _ | _
-14 | । | । | PUNCT | SYM | _ | 12 | punct | _ | _ | _
-
-
-
-The Hindi verbs
-- 'करते' is labeled as evoking the '**enter.01**' frame with one role: "कुशीनगर की सीमा" (_kushinagar border_) is labeled **A1** (place or thing entered). 
+    The Hindi verbs
+    - 'करते' is labeled as evoking the '**enter.01**' frame with one role: "कुशीनगर की सीमा" (_kushinagar border_) is labeled **A1** (place or thing entered). 
 
 </div>
 </div>
