@@ -130,10 +130,8 @@ The French verbs
 <td>0</td>
 <td>root</td>
 <td><a href="https://verbs.colorado.edu/propbank/framesets-english-aliases/struggle.html">struggle.02</a></td>
-<td>A0:1\</td>
-<td>A1:4</td>
-<td>A0:1-1\</td>
-<td>A1:3-10</td>
+<td>A0:1|A1:4</td>
+<td>A0:1-1|A1:3-10</td>
 </tr>
 <tr>
 <td>3</td>
@@ -158,10 +156,8 @@ The French verbs
 <td>2</td>
 <td>advcl</td>
 <td><a href="https://verbs.colorado.edu/propbank/framesets-english-aliases/escape.html">escape.01</a></td>
-<td>A0:1\</td>
-<td>A1:7</td>
-<td>A0:1-1\</td>
-<td>A1:6-7</td>
+<td>A0:1|A1:7</td>
+<td>A0:1-1|A1:6-7</td>
 </tr>
 <tr>
 <td>5-6</td>
@@ -280,7 +276,7 @@ The French verbs
 <div role="tabpanel" class="tab-pane" id="hindi">
 <!--     <h2>Hindi</h2> -->
     
-- Sentence: `कुशीनगर की सीमा में प्रवेश करते ही भव्‍य प्रवेशद्वार आपका स्वागत करता है ।`(_The grand entrance welcomes you as you enter the limits of Kushinagar._). 
+<!-- - Sentence: `कुशीनगर की सीमा में प्रवेश करते ही भव्‍य प्रवेशद्वार आपका स्वागत करता है ।`(_The grand entrance welcomes you as you enter the limits of Kushinagar._). 
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
 
 |ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS|
@@ -302,7 +298,220 @@ The French verbs
 
 The Hindi verbs
 - 'करते' is labeled as evoking the '**enter.01**' frame with one role: "कुशीनगर की सीमा" (_kushinagar border_) is labeled **A1** (place or thing entered). 
+     -->
     
+<ul>
+<li>Sentence: <code>कुशीनगर की सीमा में प्रवेश करते ही भव्‍य प्रवेशद्वार आपका स्वागत करता है ।</code>(<em>The grand entrance welcomes you as you enter the limits of Kushinagar.</em>). </li>
+<li>In <a href="https://universaldependencies.org/ext-format.html">CoNLL-U-Plus</a> format, it looks like this, with English PropBank labels in the last three columns:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>FORM</th>
+<th>LEMMA</th>
+<th>UPOS</th>
+<th>XPOS</th>
+<th>FEAT</th>
+<th>HEAD</th>
+<th>DEPREL</th>
+<th>UP:PREDS</th>
+<th>UP:ARGHEADS</th>
+<th>UP:ARGSPANS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>कुशीनगर</td>
+<td>कुशीनगर</td>
+<td>PROPN</td>
+<td>NNP</td>
+<td>_</td>
+<td>3</td>
+<td>nmod</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>2</td>
+<td>की</td>
+<td>का</td>
+<td>ADP</td>
+<td>PSP</td>
+<td>_</td>
+<td>1</td>
+<td>case</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>3</td>
+<td>सीमा</td>
+<td>सीमा</td>
+<td>NOUN</td>
+<td>NN</td>
+<td>_</td>
+<td>6</td>
+<td>obl</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>4</td>
+<td>में</td>
+<td>में</td>
+<td>ADP</td>
+<td>PSP</td>
+<td>_</td>
+<td>3</td>
+<td>case</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>5</td>
+<td>प्रवेश</td>
+<td>प्रवेश</td>
+<td>NOUN</td>
+<td>NN</td>
+<td>_</td>
+<td>6</td>
+<td>compound</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>6</td>
+<td>करते</td>
+<td>कर</td>
+<td>VERB</td>
+<td>VM</td>
+<td>_</td>
+<td>12</td>
+<td>advcl</td>
+<td><a href="https://verbs.colorado.edu/propbank/framesets-english-aliases/enter.html">enter.01</a></td>
+<td>A1:3</td>
+<td>A1:1-3</td>
+</tr>
+<tr>
+<td>7</td>
+<td>ही</td>
+<td>ही</td>
+<td>PART</td>
+<td>RP</td>
+<td>_</td>
+<td>6</td>
+<td>dep</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>8</td>
+<td>भव्‍य</td>
+<td>भव्</td>
+<td>ADJ</td>
+<td>JJ</td>
+<td>_</td>
+<td>9</td>
+<td>amod</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>9</td>
+<td>प्रवेशद्वार</td>
+<td>प्रवेशद्वार</td>
+<td>NOUN</td>
+<td>NN</td>
+<td>_</td>
+<td>12</td>
+<td>nsubj</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>10</td>
+<td>आपका</td>
+<td>आप</td>
+<td>PRON</td>
+<td>PRP</td>
+<td>_</td>
+<td>11</td>
+<td>nmod</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>11</td>
+<td>स्वागत</td>
+<td>स्वागत</td>
+<td>NOUN</td>
+<td>NN</td>
+<td>_</td>
+<td>12</td>
+<td>compound</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>12</td>
+<td>करता</td>
+<td>कर</td>
+<td>VERB</td>
+<td>VM</td>
+<td>_</td>
+<td>0</td>
+<td>root</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>13</td>
+<td>है</td>
+<td>है</td>
+<td>AUX</td>
+<td>VAUX</td>
+<td>_</td>
+<td>12</td>
+<td>aux</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>14</td>
+<td>\</td>
+<td></td>
+<td>\</td>
+<td></td>
+<td>PUNCT</td>
+<td>SYM</td>
+<td>_</td>
+<td>12</td>
+<td>punct</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+</tbody>
+</table>
+<p>The Hindi verbs</p>
+<ul>
+<li>&#39;करते&#39; is labeled as evoking the &#39;<strong>enter.01</strong>&#39; frame with one role: &quot;कुशीनगर की सीमा&quot; (<em>kushinagar border</em>) is labeled <strong>A1</strong> (place or thing entered). </li>
+</ul>
+
 </div>
 
 </div>
