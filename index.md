@@ -64,7 +64,7 @@ The German verbs
 </div>
 
 <div role="tabpanel" class="tab-pane" id="french">
-    
+<!--     
 - Sentence: `Elle lutte pour échapper aux tueurs à ses trousses.`(_She struggles to escape the killers chasing her._)
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
 
@@ -85,7 +85,196 @@ The German verbs
 
 The French verbs
 - 'lutte' is labeled as evoking the '**struggle.02**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity trying) and "pour échapper aux tueurs à ses trousses" (_to escape the killers on his trail._) is labeled **A1** (predicative action). 
-- 'besuchen' is labeld as evoking the '**escape.01**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity escaping) and "les tueurs" (_the killers_) is labeled **A1** (place or thing escaped).
+- 'besuchen' is labeld as evoking the '**escape.01**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity escaping) and "les tueurs" (_the killers_) is labeled **A1** (place or thing escaped). -->
+<ul>
+<li>Sentence: <code>Elle lutte pour échapper aux tueurs à ses trousses.</code>(<em>She struggles to escape the killers chasing her.</em>)</li>
+<li>In <a href="https://universaldependencies.org/ext-format.html">CoNLL-U-Plus</a> format, it looks like this, with English PropBank labels in the last three columns:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>FORM</th>
+<th>LEMMA</th>
+<th>UPOS</th>
+<th>XPOS</th>
+<th>FEAT</th>
+<th>HEAD</th>
+<th>DEPREL</th>
+<th>UP:PREDS</th>
+<th>UP:ARGHEADS</th>
+<th>UP:ARGSPANS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Elle</td>
+<td>il</td>
+<td>PRON</td>
+<td>_</td>
+<td>_</td>
+<td>2</td>
+<td>nsubj</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>2</td>
+<td>lutte</td>
+<td>lutter</td>
+<td>VERB</td>
+<td>_</td>
+<td>_</td>
+<td>0</td>
+<td>root</td>
+<td><a href="https://verbs.colorado.edu/propbank/framesets-english-aliases/struggle.html">struggle.02</a></td>
+<td>A0:1\</td>
+<td>A1:4</td>
+<td>A0:1-1\</td>
+<td>A1:3-10</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pour</td>
+<td>pour</td>
+<td>ADP</td>
+<td>_</td>
+<td>_</td>
+<td>4</td>
+<td>mark</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>4</td>
+<td>échapper</td>
+<td>échapper</td>
+<td>VERB</td>
+<td>_</td>
+<td>_</td>
+<td>2</td>
+<td>advcl</td>
+<td><a href="https://verbs.colorado.edu/propbank/framesets-english-aliases/escape.html">escape.01</a></td>
+<td>A0:1\</td>
+<td>A1:7</td>
+<td>A0:1-1\</td>
+<td>A1:6-7</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>aux</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>5</td>
+<td>à</td>
+<td>à</td>
+<td>ADP</td>
+<td>_</td>
+<td>_</td>
+<td>7</td>
+<td>case</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>6</td>
+<td>les</td>
+<td>le</td>
+<td>DET</td>
+<td>_</td>
+<td>_</td>
+<td>7</td>
+<td>det</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>7</td>
+<td>tueurs</td>
+<td>tueur</td>
+<td>NOUN</td>
+<td>_</td>
+<td>_</td>
+<td>4</td>
+<td>obl:arg</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>8</td>
+<td>à</td>
+<td>à</td>
+<td>ADP</td>
+<td>_</td>
+<td>_</td>
+<td>10</td>
+<td>case</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>9</td>
+<td>ses</td>
+<td>son</td>
+<td>DET</td>
+<td>_</td>
+<td>_</td>
+<td>10</td>
+<td>det</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>10</td>
+<td>trousses</td>
+<td>trousses</td>
+<td>NOUN</td>
+<td>_</td>
+<td>_</td>
+<td>4</td>
+<td>obl:mod</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>11</td>
+<td>.</td>
+<td>.</td>
+<td>PUNCT</td>
+<td>_</td>
+<td>_</td>
+<td>2</td>
+<td>punct</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+</tbody>
+</table>
+<p>The French verbs</p>
+<ul>
+<li>&#39;lutte&#39; is labeled as evoking the &#39;<strong>struggle.02</strong>&#39; frame with two roles: &quot;Elle&quot; (<em>she</em>) is labeled <strong>A0</strong> (entity trying) and &quot;pour échapper aux tueurs à ses trousses&quot; (<em>to escape the killers on his trail.</em>) is labeled <strong>A1</strong> (predicative action). </li>
+<li>&#39;besuchen&#39; is labeld as evoking the &#39;<strong>escape.01</strong>&#39; frame with two roles: &quot;Elle&quot; (<em>she</em>) is labeled <strong>A0</strong> (entity escaping) and &quot;les tueurs&quot; (<em>the killers</em>) is labeled <strong>A1</strong> (place or thing escaped).</li>
+</ul>
+
 </div>
     
 <div role="tabpanel" class="tab-pane" id="hindi">
