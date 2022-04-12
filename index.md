@@ -61,7 +61,7 @@ ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS 
 The German verbs
 - 'hatte' is labeled as evoking the '**have.03**' frame with two roles: "Ich" (_I_) is labeled **A0** (owner) and "Gelegenheit" (_opportunity_) is labeled **A1** (possession). 
 - 'besuchen' is labeld as evoking the '**attend.01**' frame with two roles: "Ich" (_I_) is labeled **A0** (thing attending) and "eines seiner Seminare" (_one of his seminars_) is labeled **A1** (thing attended).
-    </div>
+</div>
 
 <div role="tabpanel" class="tab-pane" id="french">
     
@@ -86,8 +86,7 @@ ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS 
 The French verbs
 - 'lutte' is labeled as evoking the '**struggle.02**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity trying) and "pour échapper aux tueurs à ses trousses" (_to escape the killers on his trail._) is labeled **A1** (predicative action). 
 - 'besuchen' is labeld as evoking the '**escape.01**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity escaping) and "les tueurs" (_the killers_) is labeled **A1** (place or thing escaped).
-
-    </div>
+</div>
     
 <div role="tabpanel" class="tab-pane" id="hindi">
 <!--     <h2>Hindi</h2> -->
@@ -114,8 +113,8 @@ ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS 
 
 The Hindi verbs
 - 'करते' is labeled as evoking the '**enter.01**' frame with one role: "कुशीनगर की सीमा" (_kushinagar border_) is labeled **A1** (place or thing entered). 
-
-    </div>
+    
+</div>
 
 </div>
 
