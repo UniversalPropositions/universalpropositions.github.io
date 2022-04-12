@@ -130,8 +130,8 @@ The French verbs
 <td>0</td>
 <td>root</td>
 <td><a href="https://verbs.colorado.edu/propbank/framesets-english-aliases/struggle.html">struggle.02</a></td>
-<td>A0:1|A1:4</td>
-<td>A0:1-1|A1:3-10</td>
+<td>A0:1<p>|</p>A1:4</td>
+<td>A0:1-1<p>|</p>A1:3-10</td>
 </tr>
 <tr>
 <td>3</td>
@@ -156,8 +156,8 @@ The French verbs
 <td>2</td>
 <td>advcl</td>
 <td><a href="https://verbs.colorado.edu/propbank/framesets-english-aliases/escape.html">escape.01</a></td>
-<td>A0:1|A1:7</td>
-<td>A0:1-1|A1:6-7</td>
+<td>A0:1<p>|</p>A1:7</td>
+<td>A0:1-1<p>|</p>A1:6-7</td>
 </tr>
 <tr>
 <td>5-6</td>
@@ -492,8 +492,8 @@ The Hindi verbs
 </tr>
 <tr>
 <td>14</td>
-<td>|</td>
-<td>|</td>
+<td><p>|</p></td>
+<td><p>|</p></td>
 <td>PUNCT</td>
 <td>SYM</td>
 <td>_</td>
