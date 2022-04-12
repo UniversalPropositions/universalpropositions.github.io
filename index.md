@@ -37,11 +37,8 @@ For instance, consider the following sentences from different langauges:
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#german" data-toggle="tab">German</a></li>
-    <li class="active"><a class="noCrossRef" href="#french" data-toggle="tab">French</a></li>
-    <li class="active"><a class="noCrossRef" href="#hindi" data-toggle="tab">Hindi</a></li>
-    
-<!--     <li><a class="noCrossRef" href="#french" data-toggle="tab">French</a></li>
-    <li><a class="noCrossRef" href="#hindi" data-toggle="tab">Hindi</a></li> -->
+    <li><a class="noCrossRef" href="#french" data-toggle="tab">French</a></li>
+    <li><a class="noCrossRef" href="#hindi" data-toggle="tab">Hindi</a></li>
     
 </ul>
   <div class="tab-content">
@@ -70,10 +67,9 @@ The German verbs
 
 </div>
 
-<!-- <div role="tabpanel" class="tab-pane" id="french">
-    <h2>French</h2> -->
-    
 <div role="tabpanel" class="tab-pane" id="french">
+<!--     <h2>French</h2> -->
+    
     
 - Sentence: `Elle lutte pour échapper aux tueurs à ses trousses.`(_She struggles to escape the killers chasing her._). 
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
@@ -100,9 +96,8 @@ The French verbs
     
 </div>
     
-<!-- <div role="tabpanel" class="tab-pane" id="hindi">
-    <h2>Hindi</h2> -->
 <div role="tabpanel" class="tab-pane" id="hindi">
+<!--     <h2>Hindi</h2> -->
     
 - Sentence: `कुशीनगर की सीमा में प्रवेश करते ही भव्‍य प्रवेशद्वार आपका स्वागत करता है ।`(_The grand entrance welcomes you as you enter the limits of Kushinagar._). 
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
