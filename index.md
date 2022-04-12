@@ -56,7 +56,7 @@ For instance, consider the following sentences from different langauges:
 |6 | Seminare | Seminar | NOUN | NN | _ | 8 | obj | _ | _ | _|
 |7 | zu | zu | PART | PTKZU | _ | 8 | mark | _ | _ | _|
 |8 | besuchen | besuchen | VERB | VVINF | _ | 3 | xcomp | [attend.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/attend.html) | A0:1\|A1:4 | A0:1-1\|A1:4-6|
-|9 | . | . | PUNCT | $. | _ | 2 | punct | _ | _ | _|
+|9 | . | . | PUNCT | . | _ | 2 | punct | _ | _ | _|
 
 The German verbs
 - 'hatte' is labeled as evoking the '**have.03**' frame with two roles: "Ich" (_I_) is labeled **A0** (owner) and "Gelegenheit" (_opportunity_) is labeled **A1** (possession). 
@@ -94,22 +94,22 @@ The French verbs
 - Sentence: `कुशीनगर की सीमा में प्रवेश करते ही भव्‍य प्रवेशद्वार आपका स्वागत करता है ।`(_The grand entrance welcomes you as you enter the limits of Kushinagar._). 
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
 
-ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS
--- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
-1 | कुशीनगर | कुशीनगर | PROPN | NNP | _ | 3 | nmod | _ | _ | _
-2 | की | का | ADP | PSP | _ | 1 | case | _ | _ | _
-3 | सीमा | सीमा | NOUN | NN | _ | 6 | obl | _ | _ | _
-4 | में | में | ADP | PSP | _ | 3 | case | _ | _ | _
-5 | प्रवेश | प्रवेश | NOUN | NN | _ | 6 | compound | _ | _ | _
-6 | करते | कर | VERB | VM | _ | 12 | advcl | [enter.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/enter.html) | A1:3 | A1:1-3
-7 | ही | ही | PART | RP | _ | 6 | dep | _ | _ | _
-8 | भव्‍य | भव् | ADJ | JJ | _ | 9 | amod | _ | _ | _
-9 | प्रवेशद्वार | प्रवेशद्वार | NOUN | NN | _ | 12 | nsubj | _ | _ | _
-10 | आपका | आप | PRON | PRP | _ | 11 | nmod | _ | _ | _
-11 | स्वागत | स्वागत | NOUN | NN | _ | 12 | compound | _ | _ | _
-12 | करता | कर | VERB | VM | _ | 0 | root | _ | _ | _
-13 | है | है | AUX | VAUX | _ | 12 | aux | _ | _ | _
-14 | । | । | PUNCT | SYM | _ | 12 | punct | _ | _ | _
+|ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS|
+|-- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --|
+|1 | कुशीनगर | कुशीनगर | PROPN | NNP | _ | 3 | nmod | _ | _ | _|
+|2 | की | का | ADP | PSP | _ | 1 | case | _ | _ | _|
+|3 | सीमा | सीमा | NOUN | NN | _ | 6 | obl | _ | _ | _|
+|4 | में | में | ADP | PSP | _ | 3 | case | _ | _ | _|
+|5 | प्रवेश | प्रवेश | NOUN | NN | _ | 6 | compound | _ | _ | _|
+|6 | करते | कर | VERB | VM | _ | 12 | advcl | [enter.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/enter.html) | A1:3 | A1:1-3|
+|7 | ही | ही | PART | RP | _ | 6 | dep | _ | _ | _|
+|8 | भव्‍य | भव् | ADJ | JJ | _ | 9 | amod | _ | _ | _|
+|9 | प्रवेशद्वार | प्रवेशद्वार | NOUN | NN | _ | 12 | nsubj | _ | _ | _|
+|10 | आपका | आप | PRON | PRP | _ | 11 | nmod | _ | _ | _|
+|11 | स्वागत | स्वागत | NOUN | NN | _ | 12 | compound | _ | _ | _|
+|12 | करता | कर | VERB | VM | _ | 0 | root | _ | _ | _|
+|13 | है | है | AUX | VAUX | _ | 12 | aux | _ | _ | _|
+|14 | \| | \| | PUNCT | SYM | _ | 12 | punct | _ | _ | _|
 
 The Hindi verbs
 - 'करते' is labeled as evoking the '**enter.01**' frame with one role: "कुशीनगर की सीमा" (_kushinagar border_) is labeled **A1** (place or thing entered). 
