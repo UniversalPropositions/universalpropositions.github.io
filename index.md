@@ -492,10 +492,8 @@ The Hindi verbs
 </tr>
 <tr>
 <td>14</td>
-<td>\</td>
-<td></td>
-<td>\</td>
-<td></td>
+<td>|</td>
+<td>|</td>
 <td>PUNCT</td>
 <td>SYM</td>
 <td>_</td>
