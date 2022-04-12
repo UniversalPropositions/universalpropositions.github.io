@@ -43,28 +43,25 @@ For instance, consider the following sentences from different langauges:
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="german" markdown="1">
   
-## German
+- Sentence: `Ich hatte Gelegenheit eines seiner Seminare zu besuchen.`(_I had the opportunity to attend one of his seminars._). 
+- In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
 
-- Sentence: `Seine Arbeit wird von ehrenamtlichen Helfern und Regionalgruppen des Vereins unterstützt`
-- (_His work is supported by volunteers and regional groupings of the association_). 
-- In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last two columns:
 
-| Id | Form | POS | HeadId | Deprel | Frame | Role |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | Seine | DET | 2 | det:poss | _ | _ |
-| 2 | Arbeit | NOUN | 11 | nsubjpass | _ | **A1** |
-| 3 | wird | AUX | 11 | auxpass | _ | _ |
-| 4 | von | ADP | 6 | case | _ | _ |
-| 5 | ehrenamtlichen | ADJ | 6 | amod | _ | _ |
-| 6 | Helfern | NOUN | 11 | nmod | _ | **A0** |
-| 7 | und | CONJ | 6 | cc | _ | _ |
-| 8 | Regionalgruppen | NOUN | 6 | conj | _ | _ |
-| 9 | des | DET | 10 | det | _ | _ |
-| 10 | Vereins | NOUN | 8 | nmod | _ | _ |
-| 11 | unterstützt | VERB | 0 | root | **[support.01](http://verbs.colorado.edu/propbank/framesets-english/support-v.html)** | _ |
-| 12 | . | PUNCT | 11 | punct | _ | _ |
+ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS
+-- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
+1 | Ich | ich | PRON | PPER | Case=Nom\|Number=Sing\|Person=1\|PronType=Prs | 2 | nsubj | _ | _ | _
+2 | hatte | haben | VERB | VAFIN | Mood=Ind\|Number=Sing\|Person=1\|Tense=Past\|VerbForm=Fin | 0 | root | [have.03](https://verbs.colorado.edu/propbank/framesets-english-aliases/have.html) | A0:1\|A1:3 | A0:1-1\|A1:3-3
+3 | Gelegenheit | Gelegenheit | NOUN | NN | Case=Acc\|Gender=Fem\|Number=Sing | 2 | obj | _ | _ | _
+4 | eines | ein | DET | PIS | Case=Acc\|Definite=Ind\|Gender=Neut\|Number=Sing\|PronType=Ind | 6 | det | _ | _ | _
+5 | seiner | sein | DET | PPOSAT | Case=Gen\|Gender=Neut\|Gender[psor]=Masc,Neut... | 6 | det:poss | _ | _ | _
+6 | Seminare | Seminar | NOUN | NN | Case=Gen\|Gender=Neut\|Number=Plur | 8 | obj | _ | _ | _
+7 | zu | zu | PART | PTKZU | _ | 8 | mark | _ | _ | _
+8 | besuchen | besuchen | VERB | VVINF | VerbForm=Inf | 3 | xcomp | [attend.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/attend.html) | A0:1\|A1:4 | A0:1-1\|A1:4-6
+9 | . | . | PUNCT | $. | _ | 2 | punct | _ | _ | _
 
-The German verb 'unterstützt' is labeled as evoking the '**support.01**' frame with two roles: "Seine Arbeit" (_his work_) is labeled **A1** (project being supported) and "ehrenamtlichen Helfern und Regionalgruppen des Vereins" (_volunteers and regional groupings of the association_) is labeled **A0** (the helper). 
+The German verbs
+- 'hatte' is labeled as evoking the '**have.03**' frame with two roles: "Ich" (_I_) is labeled **A0** (owner) and "Gelegenheit" (_opportunity_) is labeled **A1** (possession). 
+- 'besuchen' is labeld as evoking the '**attend.01**' frame with two roles: "Ich" (_I_) is labeled **A0** (thing attending) and "eines seiner Seminare" (_one of his seminars_) is labeled **A1** (thing attended). 
 
 </div>
 
