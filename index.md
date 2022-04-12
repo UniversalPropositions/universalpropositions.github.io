@@ -46,17 +46,17 @@ For instance, consider the following sentences from different langauges:
 - Sentence: `Ich hatte Gelegenheit eines seiner Seminare zu besuchen.`(_I had the opportunity to attend one of his seminars._). 
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
 
-ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS
--- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
-1 | Ich | ich | PRON | PPER | _ | 2 | nsubj | _ | _ | _
-2 | hatte | haben | VERB | VAFIN | _ | 0 | root | [have.03](https://verbs.colorado.edu/propbank/framesets-english-aliases/have.html) | A0:1\|A1:3 | A0:1-1\|A1:3-3
-3 | Gelegenheit | Gelegenheit | NOUN | NN | _ | 2 | obj | _ | _ | _
-4 | eines | ein | DET | PIS | _ | 6 | det | _ | _ | _
-5 | seiner | sein | DET | PPOSAT | _ | 6 | det:poss | _ | _ | _
-6 | Seminare | Seminar | NOUN | NN | _ | 8 | obj | _ | _ | _
-7 | zu | zu | PART | PTKZU | _ | 8 | mark | _ | _ | _
-8 | besuchen | besuchen | VERB | VVINF | _ | 3 | xcomp | [attend.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/attend.html) | A0:1\|A1:4 | A0:1-1\|A1:4-6
-9 | . | . | PUNCT | $. | _ | 2 | punct | _ | _ | _
+|ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS|
+|-- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --|
+|1 | Ich | ich | PRON | PPER | _ | 2 | nsubj | _ | _ | _|
+|2 | hatte | haben | VERB | VAFIN | _ | 0 | root | [have.03](https://verbs.colorado.edu/propbank/framesets-english-aliases/have.html) | A0:1\|A1:3 | A0:1-1\|A1:3-3|
+|3 | Gelegenheit | Gelegenheit | NOUN | NN | _ | 2 | obj | _ | _ | _|
+|4 | eines | ein | DET | PIS | _ | 6 | det | _ | _ | _|
+|5 | seiner | sein | DET | PPOSAT | _ | 6 | det:poss | _ | _ | _|
+|6 | Seminare | Seminar | NOUN | NN | _ | 8 | obj | _ | _ | _|
+|7 | zu | zu | PART | PTKZU | _ | 8 | mark | _ | _ | _|
+|8 | besuchen | besuchen | VERB | VVINF | _ | 3 | xcomp | [attend.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/attend.html) | A0:1\|A1:4 | A0:1-1\|A1:4-6|
+|9 | . | . | PUNCT | $. | _ | 2 | punct | _ | _ | _|
 
 The German verbs
 - 'hatte' is labeled as evoking the '**have.03**' frame with two roles: "Ich" (_I_) is labeled **A0** (owner) and "Gelegenheit" (_opportunity_) is labeled **A1** (possession). 
@@ -68,20 +68,20 @@ The German verbs
 - Sentence: `Elle lutte pour échapper aux tueurs à ses trousses.`(_She struggles to escape the killers chasing her._)
 - In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
 
-ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS
--- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
-1 | Elle | il | PRON | _ | _ | 2 | nsubj | _ | _ | _
-2 | lutte | lutter | VERB | _ | _ | 0 | root | [struggle.02](https://verbs.colorado.edu/propbank/framesets-english-aliases/struggle.html) | A0:1\|A1:4 | A0:1-1\|A1:3-10
-3 | pour | pour | ADP | _ | _ | 4 | mark | _ | _ | _
-4 | échapper | échapper | VERB | _ | _ | 2 | advcl | [escape.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/escape.html) | A0:1\|A1:7 | A0:1-1\|A1:6-7
-5-6 | aux | _ | _ | _ | _ | _ | _ | _ | _ | _
-5 | à | à | ADP | _ | _ | 7 | case | _ | _ | _
-6 | les | le | DET | _ | _ | 7 | det | _ | _ | _
-7 | tueurs | tueur | NOUN | _ | _ | 4 | obl:arg | _ | _ | _
-8 | à | à | ADP | _ | _ | 10 | case | _ | _ | _
-9 | ses | son | DET | _ | _ | 10 | det | _ | _ | _
-10 | trousses | trousses | NOUN | _ | _ | 4 | obl:mod | _ | _ | _
-11 | . | . | PUNCT | _ | _ | 2 | punct | _ | _ | _
+|ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS|
+|-- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --|
+|1 | Elle | il | PRON | _ | _ | 2 | nsubj | _ | _ | _|
+|2 | lutte | lutter | VERB | _ | _ | 0 | root | [struggle.02](https://verbs.colorado.edu/propbank/framesets-english-aliases/struggle.html) | A0:1\|A1:4 | A0:1-1\|A1:3-10|
+|3 | pour | pour | ADP | _ | _ | 4 | mark | _ | _ | _|
+|4 | échapper | échapper | VERB | _ | _ | 2 | advcl | [escape.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/escape.html) | A0:1\|A1:7 | A0:1-1\|A1:6-7|
+|5-6 | aux | _ | _ | _ | _ | _ | _ | _ | _ | _|
+|5 | à | à | ADP | _ | _ | 7 | case | _ | _ | _|
+|6 | les | le | DET | _ | _ | 7 | det | _ | _ | _|
+|7 | tueurs | tueur | NOUN | _ | _ | 4 | obl:arg | _ | _ | _|
+|8 | à | à | ADP | _ | _ | 10 | case | _ | _ | _|
+|9 | ses | son | DET | _ | _ | 10 | det | _ | _ | _|
+|10 | trousses | trousses | NOUN | _ | _ | 4 | obl:mod | _ | _ | _|
+|11 | . | . | PUNCT | _ | _ | 2 | punct | _ | _ | _|
 
 The French verbs
 - 'lutte' is labeled as evoking the '**struggle.02**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity trying) and "pour échapper aux tueurs à ses trousses" (_to escape the killers on his trail._) is labeled **A1** (predicative action). 
