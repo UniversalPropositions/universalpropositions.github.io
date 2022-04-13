@@ -1,6 +1,5 @@
 ---
 title: UP Events
-tags: [SRL]
 keywords: srl
 last_updated: April, 13, 2022
 summary: "This page provides the links to different UP related events"
@@ -8,7 +7,7 @@ permalink: up_event.html
 folder: up
 ---
 
-## Submissions
+## Event Submissions
 - [Shared-task proposal submission] Multilingual and Cross-lingual Semantic Role Labeling and its Applications in NLP. [Ishan Jindal](https://ijindal.github.io/), [Lonneke van der Plas](https://sites.google.com/site/lonnekenlp/), [Skatje Myers](http://ska.tjemye.rs/), [Alexandre Rademaker](https://arademaker.github.io/), Kathryn Conger, [Sameer Pradhan](https://cemantix.org/), [Martha Palmer](https://www.colorado.edu/faculty/palmer-martha)
 
 ## Upcoming
