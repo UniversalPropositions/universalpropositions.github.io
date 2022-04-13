@@ -7,6 +7,8 @@ topnav:
       external_url: https://github.com/UniversalPropositions
     - title: News
       url: /news
+    - title: UP Events
+      url: up/up_event
 
 # #Topnav dropdowns
 # topnav_dropdowns:
