@@ -902,6 +902,8 @@ If you use UP in your work, please cite these papers:
 
 ## People
 
+### Contact
+For questions, comments, and feedback, click on the `Feedback` link on the top of this page. 
 
 ### Core Team
 
@@ -912,7 +914,8 @@ If you use UP in your work, please cite these papers:
 * [Laura Chiticariu](http://researcher.watson.ibm.com/researcher/view.php?person=us-chiti), IBM Watson
 * [Marina Danilevsky](http://researcher.watson.ibm.com/researcher/view.php?person=us-mdanile), IBM Research - Almaden
 * [Huaiyu Zhu](http://researcher.watson.ibm.com/researcher/view.php?person=us-huaiyu), IBM Research - Almaden
-* [Yunyao Li](http://yunyaoli.github.io/), Apple
+* [Khoi-Nguyen Tran](https://kndtran.github.io/), IBM Research - Almaden
+* [Yunyao Li](http://yunyaoli.github.io/), Apple Inc. 
 
 ### Contributors
 
@@ -921,6 +924,8 @@ If you use UP in your work, please cite these papers:
 * Vishwajeet Kumar, IIT Bombay
 * [Fei Xia](http://faculty.washington.edu/fxia), University of Washington
 * Chenguang (Ray) Wang, Amazon
+* Linh Ha, Vietnam National University
+* Huyen Nguyen, Vietnam National University
 
 
 
