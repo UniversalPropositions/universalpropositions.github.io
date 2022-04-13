@@ -35,10 +35,11 @@ This project aims to annotate text in different languages with a layer of "unive
 
 For instance, consider the following sentences from different langauges: 
 
-<ul id="profileTabs" class="nav nav-tabs">
+<ul id="profileTabs" class="nav nav-tabs"> 
     <li class="active"><a class="noCrossRef" href="#german" data-toggle="tab">German</a></li>
     <li><a class="noCrossRef" href="#french" data-toggle="tab">French</a></li>
     <li><a class="noCrossRef" href="#hindi" data-toggle="tab">Hindi</a></li> 
+    <li><a class="noCrossRef" href="#chinese" data-toggle="tab">Chinese</a></li>
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="german" markdown="1">
@@ -512,6 +513,305 @@ The Hindi verbs
 
 </div>
 
+<div role="tabpanel" class="tab-pane" id="chinese">
+<!--     <h2>Chinese</h2> -->
+    
+<!-- - Sentence: `他花費了許多時間來比較加拿大地質調查局博物館中的恐龍化石。`(_He spends a lot of time comparing dinosaur fossils in the Geological Survey of Canada museum._). 
+- In [CoNLL-U-Plus](https://universaldependencies.org/ext-format.html) format, it looks like this, with English PropBank labels in the last three columns:
+
+|ID | FORM | LEMMA | UPOS | XPOS | FEAT | HEAD | DEPREL | UP:PREDS | UP:ARGHEADS | UP:ARGSPANS|
+|-- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --|
+|1 | 他 | 他 | PRON | PRP | _ | 7 | nsubj | _ | _ | _|
+|2 | 花費 | 花費 | VERB | VV | _ | 7 | advcl | [spend.02](https://verbs.colorado.edu/propbank/framesets-english-aliases/spend.html) | A0:1\|A1:5\|A2:7 | A0:1-1\|A1:4-5\|A2:7-17|
+|3 | 了 | 了 | AUX | AS | _ | 2 | aux | _ | _ | _|
+|4 | 許多 | 許多 | NUM | CD | _ | 5 | nummod | _ | _ | _|
+|5 | 時間 | 時間 | NOUN | NN | _ | 2 | obj | _ | _ | _|
+|6 | 來 | 來 | ADV | RB | _ | 7 | mark | _ | _ | _|
+|7 | 比較 | 比較 | VERB | VV | _ | 0 | root | [compare.01](https://verbs.colorado.edu/propbank/framesets-english-aliases/compare.html) | A0:1 | A0:1-1|
+|8 | 加拿大 | 加拿大 | PROPN | NNP | _ | 13 | nmod | _ | _ | _|
+|9 | 地質 | 地質 | NOUN | NN | _ | 13 | nmod | _ | _ | _|
+|10 | 調查 | 調查 | VERB | VV | _ | 11 | compound | _ | _ | _|
+|11 | 局 | 局 | PART | SFN | _ | 13 | nmod | _ | _ | _|
+|12 | 博物 | 博物 | NOUN | NN | _ | 13 | compound | _ | _ | _|
+|13 | 館 | 館 | PART | SFN | _ | 17 | nmod | _ | _ | _|
+|14 | 中 | 中 | NOUN | NN | _ | 13 | acl | _ | _ | _|
+|15 | 的 | 的 | PART | DEC | _ | 13 | case | _ | _ | _|
+|16 | 恐龍 | 恐龍 | NOUN | NN | _ | 17 | nmod | _ | _ | _|
+|17 | 化石 | 化石 | NOUN | NN | _ | 7 | obj | _ | _ | _|
+|18 | 。 | 。 | PUNCT | . | _ | 7 | punct | _ | _ | _|
+
+The Chinese verbs
+- '花費' is labeled as evoking the '**spend.02**' frame with one role: "他" (_He_) is labeled **A0** (bider, waiter), "許多時間" (_a lot of time_) is labeled **A1** (unit of time), "比較加拿大地質調查局博物館中的恐龍化石" (_Comparing dinosaur fossils in the Geological Survey of Canada Museum_) is labeled **A2** (activity).
+- '比較' is labeled as evoking the '**compare.01**' frame with one role: "他" (_He_) is labeled **A0** ( entity making comparison).
+     -->
+    
+<ul>
+<li>Sentence: <code>他花費了許多時間來比較加拿大地質調查局博物館中的恐龍化石。</code>(<em>He spends a lot of time comparing dinosaur fossils in the Geological Survey of Canada museum.</em>). </li>
+<li>In <a href="https://universaldependencies.org/ext-format.html">CoNLL-U-Plus</a> format, it looks like this, with English PropBank labels in the last three columns:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>FORM</th>
+<th>LEMMA</th>
+<th>UPOS</th>
+<th>XPOS</th>
+<th>FEAT</th>
+<th>HEAD</th>
+<th>DEPREL</th>
+<th>UP:PREDS</th>
+<th>UP:ARGHEADS</th>
+<th>UP:ARGSPANS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>他</td>
+<td>他</td>
+<td>PRON</td>
+<td>PRP</td>
+<td>_</td>
+<td>7</td>
+<td>nsubj</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>2</td>
+<td>花費</td>
+<td>花費</td>
+<td>VERB</td>
+<td>VV</td>
+<td>_</td>
+<td>7</td>
+<td>advcl</td>
+<td><a href="https://verbs.colorado.edu/propbank/framesets-english-aliases/spend.html">spend.02</a></td>
+<td>A0:1|A1:5|A2:7</td>
+<td>A0:1-1|A1:4-5|A2:7-17</td>
+</tr>
+<tr>
+<td>3</td>
+<td>了</td>
+<td>了</td>
+<td>AUX</td>
+<td>AS</td>
+<td>_</td>
+<td>2</td>
+<td>aux</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>4</td>
+<td>許多</td>
+<td>許多</td>
+<td>NUM</td>
+<td>CD</td>
+<td>_</td>
+<td>5</td>
+<td>nummod</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>5</td>
+<td>時間</td>
+<td>時間</td>
+<td>NOUN</td>
+<td>NN</td>
+<td>_</td>
+<td>2</td>
+<td>obj</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>6</td>
+<td>來</td>
+<td>來</td>
+<td>ADV</td>
+<td>RB</td>
+<td>_</td>
+<td>7</td>
+<td>mark</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>7</td>
+<td>比較</td>
+<td>比較</td>
+<td>VERB</td>
+<td>VV</td>
+<td>_</td>
+<td>0</td>
+<td>root</td>
+<td><a href="https://verbs.colorado.edu/propbank/framesets-english-aliases/compare.html">compare.01</a></td>
+<td>A0:1</td>
+<td>A0:1-1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>加拿大</td>
+<td>加拿大</td>
+<td>PROPN</td>
+<td>NNP</td>
+<td>_</td>
+<td>13</td>
+<td>nmod</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>9</td>
+<td>地質</td>
+<td>地質</td>
+<td>NOUN</td>
+<td>NN</td>
+<td>_</td>
+<td>13</td>
+<td>nmod</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>10</td>
+<td>調查</td>
+<td>調查</td>
+<td>VERB</td>
+<td>VV</td>
+<td>_</td>
+<td>11</td>
+<td>compound</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>11</td>
+<td>局</td>
+<td>局</td>
+<td>PART</td>
+<td>SFN</td>
+<td>_</td>
+<td>13</td>
+<td>nmod</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>12</td>
+<td>博物</td>
+<td>博物</td>
+<td>NOUN</td>
+<td>NN</td>
+<td>_</td>
+<td>13</td>
+<td>compound</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>13</td>
+<td>館</td>
+<td>館</td>
+<td>PART</td>
+<td>SFN</td>
+<td>_</td>
+<td>17</td>
+<td>nmod</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>14</td>
+<td>中</td>
+<td>中</td>
+<td>NOUN</td>
+<td>NN</td>
+<td>_</td>
+<td>13</td>
+<td>acl</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>15</td>
+<td>的</td>
+<td>的</td>
+<td>PART</td>
+<td>DEC</td>
+<td>_</td>
+<td>13</td>
+<td>case</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>16</td>
+<td>恐龍</td>
+<td>恐龍</td>
+<td>NOUN</td>
+<td>NN</td>
+<td>_</td>
+<td>17</td>
+<td>nmod</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>17</td>
+<td>化石</td>
+<td>化石</td>
+<td>NOUN</td>
+<td>NN</td>
+<td>_</td>
+<td>7</td>
+<td>obj</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+<tr>
+<td>18</td>
+<td>。</td>
+<td>。</td>
+<td>PUNCT</td>
+<td>.</td>
+<td>_</td>
+<td>7</td>
+<td>punct</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+</tbody>
+</table>
+<p>The Chinese verbs</p>
+<ul>
+<li>&#39;花費&#39; is labeled as evoking the &#39;<strong>spend.02</strong>&#39; frame with one role: &quot;他&quot; (<em>He</em>) is labeled <strong>A0</strong> (bider, waiter), &quot;許多時間&quot; (<em>a lot of time</em>) is labeled <strong>A1</strong> (unit of time), &quot;比較加拿大地質調查局博物館中的恐龍化石&quot; (<em>Comparing dinosaur fossils in the Geological Survey of Canada Museum</em>) is labeled <strong>A2</strong> (activity).</li>
+<li>&#39;比較&#39; is labeled as evoking the &#39;<strong>compare.01</strong>&#39; frame with one role: &quot;他&quot; (<em>He</em>) is labeled <strong>A0</strong> ( entity making comparison).</li>
+</ul>
+
+
+
+</div>
+    
 </div>
 
 
