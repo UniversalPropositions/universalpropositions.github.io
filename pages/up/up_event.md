@@ -5,7 +5,7 @@ keywords: srl
 last_updated: April, 13, 2022
 summary: "Add events"
 permalink: up_event.html
-folder: up/
+folder: up
 ---
 
 This provides the links to different UP related events
