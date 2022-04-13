@@ -8,7 +8,7 @@ topnav:
     - title: News
       url: /news
     - title: UP Events
-      url: up/up_event
+      url: /up_event
 
 # #Topnav dropdowns
 # topnav_dropdowns:
