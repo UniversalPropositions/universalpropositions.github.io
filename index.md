@@ -917,7 +917,7 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 * [Khoi-Nguyen Tran](https://kndtran.github.io/), IBM Research - Almaden
 * [Yunyao Li](http://yunyaoli.github.io/), Apple Inc. 
 
-### Contributors
+<!-- ### Contributors
 
 * Xinyu Guan, Yale University
 * Tomer Mahlin, IBM Systems Division, Israel
@@ -927,7 +927,7 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 * Linh Ha, Vietnam National University
 * Huyen Nguyen, Vietnam National University
 
-
+ -->
 
 
 
