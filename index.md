@@ -909,7 +909,7 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 
 * [Ishan Jindal](https://ijindal.github.io/), IBM Research - Almaden
 * [Alexandre Rademaker](http://researcher.ibm.com/researcher/view.php?person=br-alexrad), IBM Research - Brazil
-* Michał Ulewicz, Kyndryl, Poland
+* [Michał Ulewicz](https://michalu.github.io/), Kyndryl, Poland
 * [Alan Akbik](http://alanakbik.github.io/), Humboldt-Universität zu Berlin, Germany
 * [Laura Chiticariu](http://researcher.watson.ibm.com/researcher/view.php?person=us-chiti), IBM Watson
 * [Marina Danilevsky](http://researcher.watson.ibm.com/researcher/view.php?person=us-mdanile), IBM Research - Almaden
