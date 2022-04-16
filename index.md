@@ -828,12 +828,27 @@ Besides the original 10 columns from the CoNLL-U format (can be obtained from UD
 - UP:ARGHEADS is the argument head column (column 12) provides a link to the arguments head to predicate. Each argument head is pipe `|` separated, with the arg files linked to token id.
 - UP:ARGSPANS is the argument span column (column 12) provides a link to the arguments span to predicate. Each argument span is pipe `|` separated, with the arg files linked to range of token ids.
 
-We provide a python script that given a UD_file and UP_file combines them and writes a 14 column `.conllup` format.
+We provide a python script that given a UD_file and UP_file combines them and writes a 14 column `.conllup` format. The script is available in [tools](https://github.com/UniversalPropositions/tools) repository: `up2/merge_ud_up.py`. 
+It takes three arguments:
 
+`input_ud` - input UD_file or input UD_folder
+
+`input_up` - input UP_file or input UP_folder
+
+`output` - output folder for combined output
+
+Below is a sample execution with UD_folder and UP_folder - all the corresponding files from both folders (including subfolders) will be processed during one execution. 
+```
+python3 up2/merge_ud_up.py input_ud=./tests/data/ud/hi/ --input_up=./tests/data/up/hi/ --output=./tests/data/ud-up/hi/
+```
+An analogical execution with the specific UD_file and UP_file is presented below:
+```
+python3 up2/merge_ud_up.py input_ud=./tests/data/ud/hi/hi_hdtb-ud-dev.conllu --input_up=./tests/data/up/hi/hi_hdtb-up-dev.conllu --output=./tests/data/ud-up/hi/hi_hdtb-ud-up-dev.conllu
+```
 <!-- - Every column after the eleventh is a predicate, in order that they appear in the sentence. Note that the Propbank `.gold_conll` files contain a "frame file" column (column 11) that lets you know which ".xml" [file](https://github.com/propbank/propbank-frames/) contains the actual semantic form for the predicate in question (which is not always the same as the predicate: one must reference "lighten.xml" for lighten_up.02), but since all predicate identifier is unique, we haven't preserved this column. -->
 
 #### Repository
-A UP release contains treebanks of the corresponding UD release. Since UP is automatically generated silver data we also release hand annotated EN srl labels for a subset of the lanaguges to facilitae the research community to perform fair evaluation of their multilingual and cross-lingual SRL systems. To differenciate Gold from UP data we use the following conventions:
+A UP release contains treebanks of the corresponding UD release. Since UP is automatically generated silver data we also release hand annotated EN srl labels for a subset of the lanaguges to facilitate the research community to perform fair evaluation of their multilingual and cross-lingual SRL systems. To differentiate Gold from UP data we use the following conventions:
 - `UP_<langauge>-<corpus>`
 - `GOLD__<langauge>-<corpus>`
 
