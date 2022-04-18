@@ -269,7 +269,7 @@ The French verbs
 <p>The French verbs</p>
 <ul>
 <li>&#39;lutte&#39; is labeled as evoking the &#39;<strong>struggle.02</strong>&#39; frame with two roles: &quot;Elle&quot; (<em>she</em>) is labeled <strong>A0</strong> (entity trying) and &quot;pour échapper aux tueurs à ses trousses&quot; (<em>to escape the killers on his trail.</em>) is labeled <strong>A1</strong> (predicative action). </li>
-<li>&#39;besuchen&#39; is labeld as evoking the &#39;<strong>escape.01</strong>&#39; frame with two roles: &quot;Elle&quot; (<em>she</em>) is labeled <strong>A0</strong> (entity escaping) and &quot;les tueurs&quot; (<em>the killers</em>) is labeled <strong>A1</strong> (place or thing escaped).</li>
+<li>&#39;échapper&#39; is labeld as evoking the &#39;<strong>escape.01</strong>&#39; frame with two roles: &quot;Elle&quot; (<em>she</em>) is labeled <strong>A0</strong> (entity escaping) and &quot;les tueurs&quot; (<em>the killers</em>) is labeled <strong>A1</strong> (place or thing escaped).</li>
 </ul>
 
 </div>
@@ -851,7 +851,7 @@ python3 up2/merge_ud_up.py input_ud=./tests/data/ud/hi/hi_hdtb-ud-dev.conllu --i
 #### Repository
 A UP release contains treebanks of the corresponding UD release. Since UP is automatically generated silver data we also release hand annotated EN srl labels for a subset of the lanaguges to facilitate the research community to perform fair evaluation of their multilingual and cross-lingual SRL systems. To differentiate Gold from UP data we use the following conventions:
 - `UP_<langauge>-<corpus>`
-- `GOLD__<langauge>-<corpus>`
+- `GOLD_<langauge>-<corpus>`
 
 In addition, each language has a folder with verb overview files (produced from the frame files) in html format. These files can be viewed in a browser and give an overview of all English frames that each target language verb can evoke.
 
