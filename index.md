@@ -12,7 +12,7 @@ hide_sidebar: true
 
 # Release
 
-These is release 2.0 of the Universal Proposition Banks (UP). It is built upon [release 2.9 of the Universal Dependency Treebanks](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-4611) and inherits their [licence](https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.9). We use the frame and role labels from the [English Proposition Bank](http://propbank.github.io/) version [3.0](https://github.com/propbank/propbank-documentation/blob/master/other-documentation/Description-of-PB3-changes.md).
+This is release 2.0 of the Universal Proposition Banks (UP). It is built upon [release 2.9 of the Universal Dependency Treebanks](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-4611) and inherits their [licence](https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.9). We use the frame and role labels from the [English Proposition Bank](http://propbank.github.io/) version [3.0](https://github.com/propbank/propbank-documentation/blob/master/other-documentation/Description-of-PB3-changes.md).
 
 
 **News (2022/01/01)**: UP1.0 Freeze ! 
@@ -85,8 +85,8 @@ The German verbs
 |11 | . | . | PUNCT | _ | _ | 2 | punct | _ | _ | _|
 
 The French verbs
-- 'lutte' is labeled as evoking the '**struggle.02**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity trying) and "pour échapper aux tueurs à ses trousses" (_to escape the killers on his trail._) is labeled **A1** (predicative action). 
-- 'besuchen' is labeld as evoking the '**escape.01**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity escaping) and "les tueurs" (_the killers_) is labeled **A1** (place or thing escaped). -->
+- 'lutte' is labeled as evoking the '**struggle.02**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity trying) and "pour échapper aux tueurs à ses trousses" (_to escape the killers on her trail._) is labeled **A1** (predicative action). 
+- 'échapper' is labeld as evoking the '**escape.01**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity escaping) and "les tueurs" (_the killers_) is labeled **A1** (place or thing escaped). -->
 <ul>
 <li>Sentence: <code>Elle lutte pour échapper aux tueurs à ses trousses.</code>(<em>She struggles to escape the killers chasing her.</em>)</li>
 <li>In <a href="https://universaldependencies.org/ext-format.html">CoNLL-U-Plus</a> format, it looks like this, with English PropBank labels in the last three columns:</li>
@@ -541,12 +541,12 @@ The Hindi verbs
 |18 | 。 | 。 | PUNCT | . | _ | 7 | punct | _ | _ | _|
 
 The Chinese verbs
-- '花費' is labeled as evoking the '**spend.02**' frame with one role: "他" (_He_) is labeled **A0** (bider, waiter), "許多時間" (_a lot of time_) is labeled **A1** (unit of time), "比較加拿大地質調查局博物館中的恐龍化石" (_Comparing dinosaur fossils in the Geological Survey of Canada Museum_) is labeled **A2** (activity).
+- '花費' is labeled as evoking the '**spend.02**' frame with roles: "他" (_He_) is labeled **A0** (bider, waiter), "許多時間" (_a lot of time_) is labeled **A1** (unit of time), "比較加拿大地質調查局博物館中的恐龍化石" (_Comparing dinosaur fossils in the Geological Survey of Canada Museum_) is labeled **A2** (activity).
 - '比較' is labeled as evoking the '**compare.01**' frame with one role: "他" (_He_) is labeled **A0** ( entity making comparison).
      -->
     
 <ul>
-<li>Sentence: <code>他花費了許多時間來比較加拿大地質調查局博物館中的恐龍化石。</code>(<em>He spends a lot of time comparing dinosaur fossils in the Geological Survey of Canada museum.</em>). </li>
+<li>Sentence: <code>他花費了許多時間來比較加拿大地質調查局博物館中的恐龍化石。</code>(<em>He spent a lot of time comparing dinosaur fossils in the Geological Survey of Canada museum.</em>). </li>
 <li>In <a href="https://universaldependencies.org/ext-format.html">CoNLL-U-Plus</a> format, it looks like this, with English PropBank labels in the last three columns:</li>
 </ul>
 <table>
@@ -822,20 +822,21 @@ The universal propbank (UP) for each language consists of three files (training,
 
 <!-- but currently encoding an extension of the [CoNLL-U format](http://universaldependencies.org/format.html). The extension is based on the CoNLL format produced by the [Propbank conversion scripts](https://github.com/propbank/propbank-release/blob/master/docs/conll-conversion-notes.md), called `.gold_conll`.  -->
 
-Besides the original 10 columns from the CoNLL-U format (can be obtained from UD), we only provide the four columns ID UP:PRED, UP:ARGHEADS, and UP:ARGSPANS.
-- ID is the token id consistent with corresponding UD sentence.
-- UP:PRED is the roleset column (column 11) gives the actual EN propbank sense used, and that sense provides roleset specific meanings for each of the numbered arguments. 
-- UP:ARGHEADS is the argument head column (column 12) provides a link to the arguments head to predicate. Each argument head is pipe `|` separated, with the arg files linked to token id.
-- UP:ARGSPANS is the argument span column (column 12) provides a link to the arguments span to predicate. Each argument span is pipe `|` separated, with the arg files linked to range of token ids.
+The `conllup` formats (Link to definition) adds user defined columns to the original 10 columns from the CoNLL-U format (can be obtained from UD). Our data consists of four columns: the original `ID` columns, plus three additional columns `UP:PRED`, `UP:ARGHEADS`, and `UP:ARGSPANS`.
+- **ID** (column 1) is the token id consistent with corresponding UD sentence.
+- **UP:PRED** (column 11) contains predicate sense label for this predicate. This sense provides roleset specific meanings for each of its arguments, as defined in EN propbank.
+- **UP:ARGHEADS** (column 12) contains the argument heads for arguments of this predicate. Each argument is in the format `label:token_id`.  The arguments are separated by pipe `|` charactor.
+- **UP:ARGSPANS** (column 13) contains the argument spans for arguments of this predicate. Each argument is in the format `label:start_token_id-end_token_id`.  The arguments are separated by pipe `|` charactor.
 
-We provide a python script that given a UD_file and UP_file combines them and writes a 14 column `.conllup` format. The script is available in [tools](https://github.com/UniversalPropositions/tools) repository: `up2/merge_ud_up.py`. 
+### Script
+We provide a python script to combine such a UP file with its corresponding UD file to produce the desired 13 column `.conllup` file. The script is available in [tools](https://github.com/UniversalPropositions/tools) repository: `up2/merge_ud_up.py`. 
 It takes three arguments:
 
-`input_ud` - input UD_file or input UD_folder
+- `input_ud` - input UD_file or input UD_folder
 
-`input_up` - input UP_file or input UP_folder
+- `input_up` - input UP_file or input UP_folder
 
-`output` - output folder for combined output
+- `output` - output folder for combined output
 
 Below is a sample execution with UD_folder and UP_folder - all the corresponding files from both folders (including subfolders) will be processed during one execution. 
 ```
