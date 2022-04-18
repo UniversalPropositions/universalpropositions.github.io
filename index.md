@@ -828,7 +828,7 @@ The `conllup` formats (Link to definition) adds user defined columns to the orig
 - **UP:ARGHEADS** (column 12) contains the argument heads for arguments of this predicate. Each argument is in the format `label:token_id`.  The arguments are separated by pipe `|` charactor.
 - **UP:ARGSPANS** (column 13) contains the argument spans for arguments of this predicate. Each argument is in the format `label:start_token_id-end_token_id`.  The arguments are separated by pipe `|` charactor.
 
-### Script
+#### Script
 We provide a python script to combine such a UP file with its corresponding UD file to produce the desired 13 column `.conllup` file. The script is available in [tools](https://github.com/UniversalPropositions/tools) repository: `up2/merge_ud_up.py`. 
 It takes three arguments:
 
