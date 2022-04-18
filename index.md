@@ -804,7 +804,7 @@ The Chinese verbs
 </table>
 <p>The Chinese verbs</p>
 <ul>
-<li>&#39;花費&#39; is labeled as evoking the &#39;<strong>spend.02</strong>&#39; frame with one role: &quot;他&quot; (<em>He</em>) is labeled <strong>A0</strong> (bider, waiter), &quot;許多時間&quot; (<em>a lot of time</em>) is labeled <strong>A1</strong> (unit of time), &quot;比較加拿大地質調查局博物館中的恐龍化石&quot; (<em>Comparing dinosaur fossils in the Geological Survey of Canada Museum</em>) is labeled <strong>A2</strong> (activity).</li>
+<li>&#39;花費&#39; is labeled as evoking the &#39;<strong>spend.02</strong>&#39;  frame with roles: &quot;他&quot; (<em>He</em>) is labeled <strong>A0</strong> (bider, waiter), &quot;許多時間&quot; (<em>a lot of time</em>) is labeled <strong>A1</strong> (unit of time), &quot;比較加拿大地質調查局博物館中的恐龍化石&quot; (<em>Comparing dinosaur fossils in the Geological Survey of Canada Museum</em>) is labeled <strong>A2</strong> (activity).</li>
 <li>&#39;比較&#39; is labeled as evoking the &#39;<strong>compare.01</strong>&#39; frame with one role: &quot;他&quot; (<em>He</em>) is labeled <strong>A0</strong> ( entity making comparison).</li>
 </ul>
 
