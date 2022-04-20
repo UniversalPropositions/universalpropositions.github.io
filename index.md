@@ -33,7 +33,7 @@ Using this data, we can create SRL systems that predict English PropBank labels 
 
 This project aims to annotate text in different languages with a layer of "universal" semantic role labeling annotation. For this purpose, we use the frame and role labels of the English Proposition Bank to label shallow semantics in sentences in new target languages. 
 
-For instance, consider the following sentences from different langauges: 
+For instance, consider the following sentences from different languages: 
 
 <ul id="profileTabs" class="nav nav-tabs"> 
     <li class="active"><a class="noCrossRef" href="#german" data-toggle="tab">German</a></li>
@@ -61,7 +61,7 @@ For instance, consider the following sentences from different langauges:
 
 The German verbs
 - 'hatte' is labeled as evoking the '**have.03**' frame with two roles: "Ich" (_I_) is labeled **A0** (owner) and "Gelegenheit" (_opportunity_) is labeled **A1** (possession). 
-- 'besuchen' is labeld as evoking the '**attend.01**' frame with two roles: "Ich" (_I_) is labeled **A0** (thing attending) and "eines seiner Seminare" (_one of his seminars_) is labeled **A1** (thing attended).
+- 'besuchen' is labeled as evoking the '**attend.01**' frame with two roles: "Ich" (_I_) is labeled **A0** (thing attending) and "eines seiner Seminare" (_one of his seminars_) is labeled **A1** (thing attended).
 </div>
 
 <div role="tabpanel" class="tab-pane" id="french">
@@ -86,7 +86,7 @@ The German verbs
 
 The French verbs
 - 'lutte' is labeled as evoking the '**struggle.02**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity trying) and "pour échapper aux tueurs à ses trousses" (_to escape the killers on her trail._) is labeled **A1** (predicative action). 
-- 'échapper' is labeld as evoking the '**escape.01**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity escaping) and "les tueurs" (_the killers_) is labeled **A1** (place or thing escaped). -->
+- 'échapper' is labeled as evoking the '**escape.01**' frame with two roles: "Elle" (_she_) is labeled **A0** (entity escaping) and "les tueurs" (_the killers_) is labeled **A1** (place or thing escaped). -->
 <ul>
 <li>Sentence: <code>Elle lutte pour échapper aux tueurs à ses trousses.</code>(<em>She struggles to escape the killers chasing her.</em>)</li>
 <li>In <a href="https://universaldependencies.org/ext-format.html">CoNLL-U-Plus</a> format, it looks like this, with English PropBank labels in the last three columns:</li>
@@ -269,7 +269,7 @@ The French verbs
 <p>The French verbs</p>
 <ul>
 <li>&#39;lutte&#39; is labeled as evoking the &#39;<strong>struggle.02</strong>&#39; frame with two roles: &quot;Elle&quot; (<em>she</em>) is labeled <strong>A0</strong> (entity trying) and &quot;pour échapper aux tueurs à ses trousses&quot; (<em>to escape the killers on her trail.</em>) is labeled <strong>A1</strong> (predicative action). </li>
-<li>&#39;échapper&#39; is labeld as evoking the &#39;<strong>escape.01</strong>&#39; frame with two roles: &quot;Elle&quot; (<em>she</em>) is labeled <strong>A0</strong> (entity escaping) and &quot;les tueurs&quot; (<em>the killers</em>) is labeled <strong>A1</strong> (place or thing escaped).</li>
+<li>&#39;échapper&#39; is labeled as evoking the &#39;<strong>escape.01</strong>&#39; frame with two roles: &quot;Elle&quot; (<em>she</em>) is labeled <strong>A0</strong> (entity escaping) and &quot;les tueurs&quot; (<em>the killers</em>) is labeled <strong>A1</strong> (place or thing escaped).</li>
 </ul>
 
 </div>
@@ -818,11 +818,11 @@ The Chinese verbs
 
 ### Format 
 #### Data
-The universal propbank (UP) for each language consists of three files (training, dev and test data) with the extension `.conllup`.
+The universal propbank (UP) for each language consists of three files (training, dev, and test data) with the extension `.conllup`.
 
 <!-- but currently encoding an extension of the [CoNLL-U format](http://universaldependencies.org/format.html). The extension is based on the CoNLL format produced by the [Propbank conversion scripts](https://github.com/propbank/propbank-release/blob/master/docs/conll-conversion-notes.md), called `.gold_conll`.  -->
 
-The `conllup` formats (Link to definition) adds user defined columns to the original 10 columns from the CoNLL-U format (can be obtained from UD). Our data consists of four columns: the original `ID` columns, plus three additional columns `UP:PRED`, `UP:ARGHEADS`, and `UP:ARGSPANS`.
+The `conllup` format (link to definition) adds user defined columns to the original 10 columns from the CoNLL-U format (from UD). Our data consists of four columns: the original `ID` columns, plus three additional columns `UP:PRED`, `UP:ARGHEADS`, and `UP:ARGSPANS`.
 - **ID** (column 1) is the token id consistent with corresponding UD sentence.
 - **UP:PRED** (column 11) contains predicate sense label for this predicate. This sense provides roleset specific meanings for each of its arguments, as defined in EN propbank.
 - **UP:ARGHEADS** (column 12) contains the argument heads for arguments of this predicate. Each argument is in the format `label:token_id`.  The arguments are separated by pipe `|` charactor.
@@ -849,11 +849,11 @@ python3 up2/merge_ud_up.py input_ud=./tests/data/ud/hi/hi_hdtb-ud-dev.conllu --i
 <!-- - Every column after the eleventh is a predicate, in order that they appear in the sentence. Note that the Propbank `.gold_conll` files contain a "frame file" column (column 11) that lets you know which ".xml" [file](https://github.com/propbank/propbank-frames/) contains the actual semantic form for the predicate in question (which is not always the same as the predicate: one must reference "lighten.xml" for lighten_up.02), but since all predicate identifier is unique, we haven't preserved this column. -->
 
 #### Repository
-A UP release contains treebanks of the corresponding UD release. Since UP is automatically generated silver data we also release hand annotated EN srl labels for a subset of the lanaguges to facilitate the research community to perform fair evaluation of their multilingual and cross-lingual SRL systems. To differentiate Gold from UP data we use the following conventions:
-- `UP_<langauge>-<corpus>`
-- `GOLD_<langauge>-<corpus>`
+A UP release contains treebanks of the corresponding UD release. Since UP is automatically generated silver data we also release hand annotated EN SRL labels for a subset of the lanaguges to facilitate the research community to perform fair evaluation of their multilingual and cross-lingual SRL systems. To differentiate Gold from UP data we use the following conventions:
+- `UP_<language>-<corpus>`
+- `GOLD_<language>-<corpus>`
 
-In addition, each language has a folder with verb overview files (produced from the frame files) in html format. These files can be viewed in a browser and give an overview of all English frames that each target language verb can evoke.
+In addition, each language has a folder with verb overview files (produced from the frame files) in HTML format. These files can be viewed in a browser and give an overview of all English frames that each target language verb can evoke.
 
 ### Scope
 
@@ -861,7 +861,7 @@ Our current focus is to annotate all target language verbs with appropriate Engl
 
 ### A note on quality 
 
-This is an ongoing research project in which we use a combination of data-driven methods and some post-processing to generate these resources. This means that the labels in the UPs are mostly predicted over models trained on a different domain, which affects the quality. A good example is the German verb "angeben" which in our source data was mostly used in the "brag.01" sense, but in the German UD data is mostly used in the "report.01" sense, but almost never detected as such. We provide the langauges specific observations in their respective README files. 
+This is an ongoing research project in which we use a combination of data-driven methods and some post-processing to generate these resources. This means that the labels in the UPs are mostly predicted over models trained on a different domain, which affects the quality. A good example is the German verb "angeben" which in our source data was mostly used in the "brag.01" sense, but in the German UD data is mostly used in the "report.01" sense, but almost never detected as such. We provide the languages specific observations in their respective README files. 
 
 ## Impact 
 ### Business Impact
@@ -876,14 +876,18 @@ This is an ongoing research project in which we use a combination of data-driven
 
 ## Current and future work
 
-This is an ongoing project which we are improving along three lines: (1) We are working on adding new languages to the current release. (2) We are working to curate the data to improve the quality of SRL annotation. (3) We are looking into extending the scope of frame-evoking-elements to other types of predicates besides verbs. (4) We will migrate the data to newer UD standard. 
+This is an ongoing project which we are improving along these lines:
+- (1) We are working on adding new languages to the current release.
+- (2) We are working to curate the data to improve the quality of SRL annotation.
+- (3) We are looking into extending the scope of frame-evoking-elements to other types of predicates besides verbs.
+- (4) We will migrate the data to the newer UD standard. 
 
 ## Publications
 
 ### Citing UP in papers
 If you use UP in your work, please cite these papers:
 
-[Universal Proposition Bank 2.0](). Ishan Jindal, Alexandre Rademaker, Michał Ulewicz, NGUYEN Thi Minh Huyen, HA My Linh, Khoi-Nguyen Tran, Huaiyu Zhu and Yunyao Li. *LREC2022.
+[Universal Proposition Bank 2.0](). Ishan Jindal, Alexandre Rademaker, Michał Ulewicz, Linh Ha, Huyen Nguyen, Khoi-Nguyen Tran, Huaiyu Zhu and Yunyao Li. *LREC2022.
 
 [Generating High Quality Proposition Banks for Multilingual Semantic Role Labeling](http://alanakbik.github.io/papers/acl2015.pdf). Alan Akbik, Laura Chiticariu, Marina Danilevsky, Yunyao Li, Shivakumar Vaithyanathan and Huaiyu Zhu. *53rd Annual Meeting of the Association for Computational Linguistics* ACL 2015.
 
