@@ -8,7 +8,7 @@ summary: This project aims to annotate text in different languages with a layer 
 hide_sidebar: true
 ---
 
-{% include warning.html content="This site is under construction." %}
+<!-- {% include warning.html content="This site is under construction." %} -->
 
 # Release
 
