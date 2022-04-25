@@ -951,7 +951,7 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 
 ### Languages
 
-- Currently, UP data is available for 23 langauges.
+- Currently, UP data is available for 23 languages.
 
 |ID | Language|
 |-- | -- |
@@ -976,7 +976,6 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 |ta | Tamil|
 |te | Telugu|
 |uk | Ukrainian|
-|ur | Urdu|
 |vi | Vietnamese|
 |zh | Chinese|
 
