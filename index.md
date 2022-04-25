@@ -949,6 +949,37 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 
  -->
 
+### Languages
+
+- Currently, UP data is available for 23 langauges.
+
+|ID | Language|
+|-- | -- |
+|cs | Czech |
+|de | German|
+|el | Greek|
+|es | Spanish|
+|fi | Finnish|
+|fr | French|
+|hi | Hindi|
+|hu | Hungarian|
+|id | Indonesian|
+|it | Italian|
+|ja | Japanese|
+|ko | Korean|
+|mr | Marathi|
+|nl | Dutch|
+|pl | Polish|
+|pt | Portuguese|
+|ro | Romanian|
+|ru | Russian|
+|ta | Tamil|
+|te | Telugu|
+|uk | Ukrainian|
+|ur | Urdu|
+|vi | Vietnamese|
+|zh | Chinese|
+
 
 
 
