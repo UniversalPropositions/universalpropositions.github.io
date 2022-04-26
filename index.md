@@ -953,32 +953,39 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 
 - Currently, UP data is available for 23 languages.
 
-|ID | Language|
-|-- | -- |
-|cs | Czech |
-|de | German|
-|el | Greek|
-|es | Spanish|
-|fi | Finnish|
-|fr | French|
-|hi | Hindi|
-|hu | Hungarian|
-|id | Indonesian|
-|it | Italian|
-|ja | Japanese|
-|ko | Korean|
-|mr | Marathi|
-|nl | Dutch|
-|pl | Polish|
-|pt | Portuguese|
-|ro | Romanian|
-|ru | Russian|
-|ta | Tamil|
-|te | Telugu|
-|uk | Ukrainian|
-|vi | Vietnamese|
-|zh | Chinese|
+|ID | Language| License | Corpus| Notes|
+|-- | -- | -- | -- | --|
+|cs | Czech | [cdla](https://cdla.dev/sharing-1-0/)| [CAC](https://github.com/UniversalPropositions/UP_Czech-CAC), [CLTT](https://github.com/UniversalPropositions/UP_Czech-CLTT), [FicTree](https://github.com/UniversalPropositions/UP_Czech-FicTree), [PDT](https://github.com/UniversalPropositions/UP_Czech-PDT) | Available |
+|de | German| [cdla](https://cdla.dev/sharing-1-0/)| [GSD](https://github.com/UniversalPropositions/UP_German-GSD), [HDT](https://github.com/UniversalPropositions/UP_German-HDT) | Available |
+|el | Greek| [cdla](https://cdla.dev/sharing-1-0/)| [GDT](https://github.com/UniversalPropositions/UP_Greek-GDT)| Available |
+|es | Spanish| [cdla](https://cdla.dev/sharing-1-0/)| [GSD](https://github.com/UniversalPropositions/UP_Spanish-GSD), [AnCora](https://github.com/UniversalPropositions/UP_Spanish-AnCora)  | Available |
+|fi | Finnish| [cdla](https://cdla.dev/sharing-1-0/)| [TDT](https://github.com/UniversalPropositions/UP_Finnish-TDT), [FTB](https://github.com/UniversalPropositions/UP_Finnish-FTB) | Available |
+|fr | French| [cdla](https://cdla.dev/sharing-1-0/)| [GSD](https://github.com/UniversalPropositions/UP_French-GSD), [Rhapsodie](https://github.com/UniversalPropositions/UP_French-Rhapsodie), [Sequoia](https://github.com/UniversalPropositions/UP_French-Sequoia) | Available |
+|hi | Hindi| [cdla](https://cdla.dev/sharing-1-0/)| [HDTB](https://github.com/UniversalPropositions/UP_Hindi-HDTB) | Available |
+|hu | Hungarian| [cdla](https://cdla.dev/sharing-1-0/)| [Szeged](https://github.com/UniversalPropositions/UP_Hungarian-Szeged) | Available |
+|id | Indonesian| [cdla](https://cdla.dev/sharing-1-0/)| [GSD](https://github.com/UniversalPropositions/UP_Indonesian-GSD) | Available |
+|it | Italian| [cdla](https://cdla.dev/sharing-1-0/)| [ISDT](https://github.com/UniversalPropositions/UP_Italian-ISDT), [ParTUT](https://github.com/UniversalPropositions/UP_Italian-ParTUT), [PoSTWITA](https://github.com/UniversalPropositions/UP_Italian-PoSTWITA), [TWITTIRO](https://github.com/UniversalPropositions/UP_Italian-TWITTIRO), [VIT](https://github.com/UniversalPropositions/UP_Italian-VIT) | Available |
+|ja | Japanese| [cdla](https://cdla.dev/sharing-1-0/)| [GSD](https://github.com/UniversalPropositions/UP_Japanese-GSD) | Available |
+|ko | Korean| [cdla](https://cdla.dev/sharing-1-0/)| [GSD](https://github.com/UniversalPropositions/UP_Korean-GSD), [Kaist](https://github.com/UniversalPropositions/UP_Korean-Kaist) | Available |
+|mr | Marathi| [cdla](https://cdla.dev/sharing-1-0/)| [UFAL](https://github.com/UniversalPropositions/UP_Marathi-UFAL) | Available |
+|nl | Dutch| [cdla](https://cdla.dev/sharing-1-0/)| [Alpino](https://github.com/UniversalPropositions/UP_Dutch-Alpino), [LassySmall](https://github.com/UniversalPropositions/UP_Dutch-LassySmall) | Available |
+|pl | Polish| [cdla](https://cdla.dev/sharing-1-0/)| [LFG](https://github.com/UniversalPropositions/UP_Polish-LFG), [PDB](https://github.com/UniversalPropositions/UP_Polish-PDB) | Available |
+|pt | Portuguese| [cdla](https://cdla.dev/sharing-1-0/)| [Bosque](https://github.com/UniversalPropositions/UP_Portuguese-Bosque), [GSD](https://github.com/UniversalPropositions/UP_Portuguese-GSD) | Available |
+|ro | Romanian| [cdla](https://cdla.dev/sharing-1-0/)| [Nonstandard](https://github.com/UniversalPropositions/UP_Romaniane-Nonstandard), [RRT](https://github.com/UniversalPropositions/UP_Romaniane-RRT), [SiMoNERo](https://github.com/UniversalPropositions/UP_Romaniane-SiMoNERo) | Available |
+|ru | Russian| [cdla](https://cdla.dev/sharing-1-0/)| [GSD](https://github.com/UniversalPropositions/UP_Russian-GSD), [Taiga](https://github.com/UniversalPropositions/UP_Russian-Taiga), [SynTagRus](https://github.com/UniversalPropositions/UP_Russian-SynTagRus) | Available |
+|ta | Tamil| [cdla](https://cdla.dev/sharing-1-0/)| [TTB](https://github.com/UniversalPropositions/UP_Tamil-TTB) | Available |
+|te | Telugu| [cdla](https://cdla.dev/sharing-1-0/)| [MTG](https://github.com/UniversalPropositions/UP_Telugu-MTG) | Available |
+|uk | Ukrainian| [cdla](https://cdla.dev/sharing-1-0/)| [IU](https://github.com/UniversalPropositions/UP_Ukrainian-IU) | Available |
+|vi | Vietnamese| [cdla](https://cdla.dev/sharing-1-0/)| [VTB](https://github.com/UniversalPropositions/UP_Vietnamese-VTB) | Available |
+|zh | Chinese| [cdla](https://cdla.dev/sharing-1-0/)| [GSD](https://github.com/UniversalPropositions/UP_Chinese-GSD) | Available |
 
+- Gold data is available for 3 languages.
+
+ID | Language| License | Corpus| Notes|
+|-- | -- | -- | -- | -- |
+|pt | Portuguese | [cdla](https://cdla.dev/sharing-1-0/)| [Bosque](https://github.com/UniversalPropositions/GOLD_Portuguese-Bosque) | Available |
+|pl | Polish| [cdla](https://cdla.dev/sharing-1-0/)| [TrOntonotes](https://github.com/UniversalPropositions/GOLD_Polish-TrOntonotes) | Available |
+|vi | Vietnamese| [cdla](https://cdla.dev/sharing-1-0/)| [Tatoeba](https://github.com/UniversalPropositions/GOLD_Vietnamese-Tatoeba) | Not available externally |
 
 
 
