@@ -953,39 +953,39 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 
 - Currently, UP data is available for 23 languages.
 
-|ID | Language|  | Corpus| Notes|
-|-- | -- | -- | -- | --|
-|cs | Czech | | [CAC](https://github.com/UniversalPropositions/UP_Czech-CAC), [CLTT](https://github.com/UniversalPropositions/UP_Czech-CLTT), [FicTree](https://github.com/UniversalPropositions/UP_Czech-FicTree), [PDT](https://github.com/UniversalPropositions/UP_Czech-PDT) |  |
-|de | German| | [GSD](https://github.com/UniversalPropositions/UP_German-GSD), [HDT](https://github.com/UniversalPropositions/UP_German-HDT) |  |
-|el | Greek| | [GDT](https://github.com/UniversalPropositions/UP_Greek-GDT)|  |
-|es | Spanish| | [GSD](https://github.com/UniversalPropositions/UP_Spanish-GSD), [AnCora](https://github.com/UniversalPropositions/UP_Spanish-AnCora)  |  |
-|fi | Finnish| | [TDT](https://github.com/UniversalPropositions/UP_Finnish-TDT), [FTB](https://github.com/UniversalPropositions/UP_Finnish-FTB) |  |
-|fr | French| | [GSD](https://github.com/UniversalPropositions/UP_French-GSD), [Rhapsodie](https://github.com/UniversalPropositions/UP_French-Rhapsodie), [Sequoia](https://github.com/UniversalPropositions/UP_French-Sequoia) |  |
-|hi | Hindi| | [HDTB](https://github.com/UniversalPropositions/UP_Hindi-HDTB) |  |
-|hu | Hungarian| | [Szeged](https://github.com/UniversalPropositions/UP_Hungarian-Szeged) |  |
-|id | Indonesian| | [GSD](https://github.com/UniversalPropositions/UP_Indonesian-GSD) |  |
-|it | Italian| | [ISDT](https://github.com/UniversalPropositions/UP_Italian-ISDT), [ParTUT](https://github.com/UniversalPropositions/UP_Italian-ParTUT), [PoSTWITA](https://github.com/UniversalPropositions/UP_Italian-PoSTWITA), [TWITTIRO](https://github.com/UniversalPropositions/UP_Italian-TWITTIRO), [VIT](https://github.com/UniversalPropositions/UP_Italian-VIT) |  |
-|ja | Japanese| | [GSD](https://github.com/UniversalPropositions/UP_Japanese-GSD) |  |
-|ko | Korean| | [GSD](https://github.com/UniversalPropositions/UP_Korean-GSD), [Kaist](https://github.com/UniversalPropositions/UP_Korean-Kaist) |  |
-|mr | Marathi| | [UFAL](https://github.com/UniversalPropositions/UP_Marathi-UFAL) |  |
-|nl | Dutch| | [Alpino](https://github.com/UniversalPropositions/UP_Dutch-Alpino), [LassySmall](https://github.com/UniversalPropositions/UP_Dutch-LassySmall) |  |
-|pl | Polish| | [LFG](https://github.com/UniversalPropositions/UP_Polish-LFG), [PDB](https://github.com/UniversalPropositions/UP_Polish-PDB) |  |
-|pt | Portuguese| | [Bosque](https://github.com/UniversalPropositions/UP_Portuguese-Bosque), [GSD](https://github.com/UniversalPropositions/UP_Portuguese-GSD) |  |
-|ro | Romanian| | [Nonstandard](https://github.com/UniversalPropositions/UP_Romaniane-Nonstandard), [RRT](https://github.com/UniversalPropositions/UP_Romaniane-RRT), [SiMoNERo](https://github.com/UniversalPropositions/UP_Romaniane-SiMoNERo) |  |
-|ru | Russian| | [GSD](https://github.com/UniversalPropositions/UP_Russian-GSD), [Taiga](https://github.com/UniversalPropositions/UP_Russian-Taiga), [SynTagRus](https://github.com/UniversalPropositions/UP_Russian-SynTagRus) |  |
-|ta | Tamil| | [TTB](https://github.com/UniversalPropositions/UP_Tamil-TTB) |  |
-|te | Telugu| | [MTG](https://github.com/UniversalPropositions/UP_Telugu-MTG) |  |
-|uk | Ukrainian| | [IU](https://github.com/UniversalPropositions/UP_Ukrainian-IU) |  |
-|vi | Vietnamese| | [VTB](https://github.com/UniversalPropositions/UP_Vietnamese-VTB) |  |
-|zh | Chinese| | [GSD](https://github.com/UniversalPropositions/UP_Chinese-GSD) |  |
+|ID | Language| Corpus| Notes|
+|-- | -- | -- | --|
+|cs | Czech |[CAC](https://github.com/UniversalPropositions/UP_Czech-CAC), [CLTT](https://github.com/UniversalPropositions/UP_Czech-CLTT), [FicTree](https://github.com/UniversalPropositions/UP_Czech-FicTree), [PDT](https://github.com/UniversalPropositions/UP_Czech-PDT) |  |
+|de | German| [GSD](https://github.com/UniversalPropositions/UP_German-GSD), [HDT](https://github.com/UniversalPropositions/UP_German-HDT) |  |
+|el | Greek| [GDT](https://github.com/UniversalPropositions/UP_Greek-GDT)|  |
+|es | Spanish| [GSD](https://github.com/UniversalPropositions/UP_Spanish-GSD), [AnCora](https://github.com/UniversalPropositions/UP_Spanish-AnCora)  |  |
+|fi | Finnish| [TDT](https://github.com/UniversalPropositions/UP_Finnish-TDT), [FTB](https://github.com/UniversalPropositions/UP_Finnish-FTB) |  |
+|fr | French| [GSD](https://github.com/UniversalPropositions/UP_French-GSD), [Rhapsodie](https://github.com/UniversalPropositions/UP_French-Rhapsodie), [Sequoia](https://github.com/UniversalPropositions/UP_French-Sequoia) |  |
+|hi | Hindi| [HDTB](https://github.com/UniversalPropositions/UP_Hindi-HDTB) |  |
+|hu | Hungarian| [Szeged](https://github.com/UniversalPropositions/UP_Hungarian-Szeged) |  |
+|id | Indonesian| [GSD](https://github.com/UniversalPropositions/UP_Indonesian-GSD) |  |
+|it | Italian| [ISDT](https://github.com/UniversalPropositions/UP_Italian-ISDT), [ParTUT](https://github.com/UniversalPropositions/UP_Italian-ParTUT), [PoSTWITA](https://github.com/UniversalPropositions/UP_Italian-PoSTWITA), [TWITTIRO](https://github.com/UniversalPropositions/UP_Italian-TWITTIRO), [VIT](https://github.com/UniversalPropositions/UP_Italian-VIT) |  |
+|ja | Japanese| [GSD](https://github.com/UniversalPropositions/UP_Japanese-GSD) |  |
+|ko | Korean| [GSD](https://github.com/UniversalPropositions/UP_Korean-GSD), [Kaist](https://github.com/UniversalPropositions/UP_Korean-Kaist) |  |
+|mr | Marathi| [UFAL](https://github.com/UniversalPropositions/UP_Marathi-UFAL) |  |
+|nl | Dutch| [Alpino](https://github.com/UniversalPropositions/UP_Dutch-Alpino), [LassySmall](https://github.com/UniversalPropositions/UP_Dutch-LassySmall) |  |
+|pl | Polish| [LFG](https://github.com/UniversalPropositions/UP_Polish-LFG), [PDB](https://github.com/UniversalPropositions/UP_Polish-PDB) |  |
+|pt | Portuguese| [Bosque](https://github.com/UniversalPropositions/UP_Portuguese-Bosque), [GSD](https://github.com/UniversalPropositions/UP_Portuguese-GSD) |  |
+|ro | Romanian| [Nonstandard](https://github.com/UniversalPropositions/UP_Romaniane-Nonstandard), [RRT](https://github.com/UniversalPropositions/UP_Romaniane-RRT), [SiMoNERo](https://github.com/UniversalPropositions/UP_Romaniane-SiMoNERo) |  |
+|ru | Russian| [GSD](https://github.com/UniversalPropositions/UP_Russian-GSD), [Taiga](https://github.com/UniversalPropositions/UP_Russian-Taiga), [SynTagRus](https://github.com/UniversalPropositions/UP_Russian-SynTagRus) |  |
+|ta | Tamil| [TTB](https://github.com/UniversalPropositions/UP_Tamil-TTB) |  |
+|te | Telugu| [MTG](https://github.com/UniversalPropositions/UP_Telugu-MTG) |  |
+|uk | Ukrainian| [IU](https://github.com/UniversalPropositions/UP_Ukrainian-IU) |  |
+|vi | Vietnamese|[VTB](https://github.com/UniversalPropositions/UP_Vietnamese-VTB) |  |
+|zh | Chinese| [GSD](https://github.com/UniversalPropositions/UP_Chinese-GSD) |  |
 
 - Gold data is  for 3 languages.
 
-ID | Language| | Corpus| Notes|
-|-- | -- | -- | -- | -- |
-|pt | Portuguese | | [Bosque](https://github.com/UniversalPropositions/GOLD_Portuguese-Bosque) |  |
-|pl | Polish| | [TrOntonotes](https://github.com/UniversalPropositions/GOLD_Polish-TrOntonotes) |  |
-|vi | Vietnamese| | [Tatoeba](https://github.com/UniversalPropositions/GOLD_Vietnamese-Tatoeba) | Not yet available externally |
+ID | Language| Corpus| Notes|
+|-- | -- | -- | -- |
+|pt | Portuguese | [Bosque](https://github.com/UniversalPropositions/GOLD_Portuguese-Bosque) |  |
+|pl | Polish| [TrOntonotes](https://github.com/UniversalPropositions/GOLD_Polish-TrOntonotes) |  |
+|vi | Vietnamese| [Tatoeba](https://github.com/UniversalPropositions/GOLD_Vietnamese-Tatoeba) | Not yet available externally |
 
 
 
