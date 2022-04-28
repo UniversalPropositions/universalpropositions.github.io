@@ -12,8 +12,15 @@ hide_sidebar: true
 
 # Release
 
-This is release 2.0 of the Universal Proposition Banks (UP). It is built upon [release 2.9 of the Universal Dependency Treebanks](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-4611) and inherits their [licence](https://lindat.mff.cuni.cz/repository/xmlui/page/licence-UD-2.9). We use the frame and role labels from the [English Proposition Bank](http://propbank.github.io/) version [3.0](https://github.com/propbank/propbank-documentation/blob/master/other-documentation/Description-of-PB3-changes.md).
+This is release v2.0 of the Universal Proposition Banks (UP) with significant enhancements over v1.0, including: 
+- (1) Propbanks with **higher quality** by using a state-of-the-art monolingual SRL and improved auto-generation of annotations; 
+- (2) Expanded language coverage (from 7 to 23 [languages](https://universalpropositions.github.io/#languages) ); 
+- (3) **Span annotation** for the decoupling of syntactic analysis; and 
+- (4) **Gold data** for a subset of the [languages](https://universalpropositions.github.io/#gold-data). 
 
+v2.0 is built upon [release 2.9 of the Universal Dependency Treebanks](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-4611). We use the frame and role labels from the [English Proposition Bank](http://propbank.github.io/) version [3.0](https://github.com/propbank/propbank-documentation/blob/master/other-documentation/Description-of-PB3-changes.md).
+
+**News (2022/04/30)**: Introduced Universal Proposition Bank 2.0 (UP2.0)
 
 **News (2022/01/01)**: UP1.0 Freeze ! 
 
@@ -880,18 +887,41 @@ This is an ongoing project which we are improving along these lines:
 - (1) We are working on adding new languages to the current release.
 - (2) We are working to curate the data to improve the quality of SRL annotation.
 - (3) We are looking into extending the scope of frame-evoking-elements to other types of predicates besides verbs.
-- (4) We will migrate the data to the newer UD standard. 
+<!-- - (4) We will migrate the data to the newer UD standard.  -->
 
-## Publications
 
-### Citing UP in papers
+## Citing UP in papers
 If you use UP in your work, please cite these papers:
+
+```
+To Add
+Universal Proposition Bank 2.0. Ishan Jindal, Alexandre Rademaker, Michał Ulewicz, Linh Ha, Huyen Nguyen, Khoi-Nguyen Tran, Huaiyu Zhu and Yunyao Li. *LREC2022
+```
+
+```
+@inproceedings{akbik-etal-2015-generating,
+    title = "Generating High Quality Proposition {B}anks for Multilingual Semantic Role Labeling",
+    author = "Akbik, Alan  and
+      Chiticariu, Laura  and
+      Danilevsky, Marina  and
+      Li, Yunyao  and
+      Vaithyanathan, Shivakumar  and
+      Zhu, Huaiyu",
+    booktitle = "Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = jul,
+    year = "2015",
+    address = "Beijing, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P15-1039",
+    doi = "10.3115/v1/P15-1039",
+    pages = "397--407",
+}
+```
+## Publications
 
 [Universal Proposition Bank 2.0](). Ishan Jindal, Alexandre Rademaker, Michał Ulewicz, Linh Ha, Huyen Nguyen, Khoi-Nguyen Tran, Huaiyu Zhu and Yunyao Li. *LREC2022.
 
 [Generating High Quality Proposition Banks for Multilingual Semantic Role Labeling](http://alanakbik.github.io/papers/acl2015.pdf). Alan Akbik, Laura Chiticariu, Marina Danilevsky, Yunyao Li, Shivakumar Vaithyanathan and Huaiyu Zhu. *53rd Annual Meeting of the Association for Computational Linguistics* ACL 2015.
-
-### Other Publications
 
 [Learning Explainable Linguistic Expressions with Neural Inductive Logic Programming for Sentence Classification](https://www.aclweb.org/anthology/2020.emnlp-main.345/). Prithviraj Sen, Marina Danilevsky, Yunyao Li, Siddhartha Brahma, Matthias Boehm, Laura Chiticariu and Rajasekar Krishnamurthy. *2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)* EMNLP 2020.
 
@@ -935,7 +965,7 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 * [Marina Danilevsky](http://researcher.watson.ibm.com/researcher/view.php?person=us-mdanile), IBM Research - Almaden
 * [Huaiyu Zhu](http://researcher.watson.ibm.com/researcher/view.php?person=us-huaiyu), IBM Research - Almaden
 * [Khoi-Nguyen Tran](https://kndtran.github.io/), IBM Research - Almaden
-* [Yunyao Li](http://yunyaoli.github.io/), Apple Inc. 
+* [Yunyao Li](http://yunyaoli.github.io/), Apple 
 
 <!-- ### Contributors
 
@@ -945,11 +975,10 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 * [Fei Xia](http://faculty.washington.edu/fxia), University of Washington
 * Chenguang (Ray) Wang, Amazon
 * Linh Ha, Vietnam National University
-* Huyen Nguyen, Vietnam National University
+* Huyen Nguyen, Vietnam National University -->
 
- -->
 
-### Languages
+## Languages
 
 - Currently, UP data is available for 23 languages.
 
@@ -979,6 +1008,7 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 |vi | Vietnamese|[VTB](https://github.com/UniversalPropositions/UP_Vietnamese-VTB) |  |
 |zh | Chinese| [GSD](https://github.com/UniversalPropositions/UP_Chinese-GSD) |  |
 
+### Gold Data
 - Gold data is  for 3 languages.
 
 ID | Language| Corpus| Notes|
