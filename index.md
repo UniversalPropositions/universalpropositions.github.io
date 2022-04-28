@@ -828,7 +828,7 @@ The Chinese verbs
 #### Data
 The universal propbank (UP) for each language consists of three files (training, dev, and test data) with the extension `.conllup`.
 
-The `conllup` format (link to definition) adds user defined columns to the original 10 columns from the CoNLL-U format (from UD). Our data consists of four columns: the original `ID` columns, plus three additional columns `UP:PRED`, `UP:ARGHEADS`, and `UP:ARGSPANS`.
+The [conllup](https://universaldependencies.org/ext-format.html) format adds user defined columns to the original 10 columns from the CoNLL-U format (from UD). Our data consists of four columns: the original `ID` columns, plus three additional columns `UP:PRED`, `UP:ARGHEADS`, and `UP:ARGSPANS`.
 - **ID** (column 1) is the token id consistent with corresponding UD sentence.
 - **UP:PRED** (column 11) contains predicate sense label for this predicate. This sense provides roleset specific meanings for each of its arguments, as defined in EN propbank.
 - **UP:ARGHEADS** (column 12) contains the argument heads for arguments of this predicate. Each argument is in the format `label:token_id`.  The arguments are separated by pipe `|` charactor.
