@@ -10,15 +10,6 @@ hide_sidebar: true
 
 <!-- {% include warning.html content="This site is under construction." %} -->
 
-# Release
-
-This is release v2.0 of the Universal Proposition Banks (UP) with significant enhancements over v1.0, including: 
-- (1) Propbanks with **higher quality** by using a state-of-the-art monolingual SRL and improved auto-generation of annotations; 
-- (2) Expanded language coverage (from 7 to 23 [languages](https://universalpropositions.github.io/#languages) ); 
-- (3) **Span annotation** for the decoupling of syntactic analysis; and 
-- (4) **Gold data** for a subset of the [languages](https://universalpropositions.github.io/#gold-data). 
-
-v2.0 is built upon [release 2.9 of the Universal Dependency Treebanks](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-4611). We use the frame and role labels from the [English Proposition Bank](http://propbank.github.io/) version [3.0](https://github.com/propbank/propbank-documentation/blob/master/other-documentation/Description-of-PB3-changes.md).
 
 **News (2022/04/30)**: Introduced Universal Proposition Bank 2.0 (UP2.0)
 
@@ -30,6 +21,16 @@ v2.0 is built upon [release 2.9 of the Universal Dependency Treebanks](https://l
 
 **News (2017/01/31)**: Initial versions of Finnish, Portuguese and Spanish UP released!
 
+
+# Release
+
+This is release v2.0 of the Universal Proposition Banks (UP) with significant enhancements over v1.0, including: 
+- (1) Propbanks with **higher quality** by using a state-of-the-art monolingual SRL and improved auto-generation of annotations; 
+- (2) **Expanded language coverage** (from 7 to 23 [languages](https://universalpropositions.github.io/#languages) ); 
+- (3) **Span annotation** for the decoupling of syntactic analysis; and 
+- (4) **Gold data** for a subset of the [languages](https://universalpropositions.github.io/#gold-data). 
+
+v2.0 is built upon [release 2.9 of the Universal Dependency Treebanks](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-4611). We use the frame and role labels from the [English Proposition Bank](http://propbank.github.io/) version [3.0](https://github.com/propbank/propbank-documentation/blob/master/other-documentation/Description-of-PB3-changes.md).
 
 ## Multilingual SRL 
 
