@@ -828,8 +828,6 @@ The Chinese verbs
 #### Data
 The universal propbank (UP) for each language consists of three files (training, dev, and test data) with the extension `.conllup`.
 
-<!-- but currently encoding an extension of the [CoNLL-U format](http://universaldependencies.org/format.html). The extension is based on the CoNLL format produced by the [Propbank conversion scripts](https://github.com/propbank/propbank-release/blob/master/docs/conll-conversion-notes.md), called `.gold_conll`.  -->
-
 The `conllup` format (link to definition) adds user defined columns to the original 10 columns from the CoNLL-U format (from UD). Our data consists of four columns: the original `ID` columns, plus three additional columns `UP:PRED`, `UP:ARGHEADS`, and `UP:ARGSPANS`.
 - **ID** (column 1) is the token id consistent with corresponding UD sentence.
 - **UP:PRED** (column 11) contains predicate sense label for this predicate. This sense provides roleset specific meanings for each of its arguments, as defined in EN propbank.
@@ -854,7 +852,6 @@ An analogical execution with the specific UD_file and UP_file is presented below
 ```
 python3 up2/merge_ud_up.py input_ud=./tests/data/ud/hi/hi_hdtb-ud-dev.conllu --input_up=./tests/data/up/hi/hi_hdtb-up-dev.conllu --output=./tests/data/ud-up/hi/hi_hdtb-ud-up-dev.conllu
 ```
-<!-- - Every column after the eleventh is a predicate, in order that they appear in the sentence. Note that the Propbank `.gold_conll` files contain a "frame file" column (column 11) that lets you know which ".xml" [file](https://github.com/propbank/propbank-frames/) contains the actual semantic form for the predicate in question (which is not always the same as the predicate: one must reference "lighten.xml" for lighten_up.02), but since all predicate identifier is unique, we haven't preserved this column. -->
 
 #### Repository
 A UP release contains treebanks of the corresponding UD release. Since UP is automatically generated silver data we also release hand annotated EN SRL labels for a subset of the lanaguges to facilitate the research community to perform fair evaluation of their multilingual and cross-lingual SRL systems. To differentiate Gold from UP data we use the following conventions:
