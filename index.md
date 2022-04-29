@@ -870,7 +870,7 @@ This is an ongoing research project in which we use a combination of data-driven
 
 ## Known Usages 
 <!-- ###  -->
-- (1) Foundation for Expanded Shallow Semantic Parsing (ESSP), a major differientiating advanced NLP primitive in Watson NLP, an embedding NLP library used widely within IBM products and solutions; 
+- (1) Foundation for Expanded Shallow Semantic Parsing (ESSP), a major differentiating advanced NLP primitive in Watson NLP, an embedding NLP library used widely within IBM products and solutions; 
 - (2) Powers multiple IBM products and solutions such as Watson Discovery.
 
 <!-- ### Scientific Impact
