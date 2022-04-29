@@ -892,8 +892,17 @@ This is an ongoing project which we are improving along these lines:
 If you use UP in your work, please cite these papers:
 
 ```
-To Add
-Universal Proposition Bank 2.0. Ishan Jindal, Alexandre Rademaker, Michał Ulewicz, Linh Ha, Huyen Nguyen, Khoi-Nguyen Tran, Huaiyu Zhu and Yunyao Li. *LREC2022
+@InProceedings{jindal-etal-2022-UP20,
+  author = {Ishan Jindal and Alexandre Rademaker and Michał Ulewicz and Linh Ha and Huyen Nguyen and Khoi-Nguyen Tran and Huaiyu Zhu and Yunyao Li},
+  title = "{Universal Proposition Bank 2.0}",
+  booktitle = {Proceedings of the Thirteenth International Conference on Language Resources and Evaluation (LREC 2022)},
+  year = {2022},
+  month = {June 21-23, 2022},
+  address = {Marseille, France},
+  publisher = {European Language Resources Association (ELRA)},
+  isbn = {979-10-95546-72-6},
+  language = {english}
+  }
 ```
 
 ```
