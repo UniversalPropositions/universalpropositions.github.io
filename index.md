@@ -11,7 +11,7 @@ hide_sidebar: true
 <!-- {% include warning.html content="This site is under construction." %} -->
 
 
-**News (2022/04/30)**: Introduced Universal Proposition Bank 2.0 (UP2.0)
+**News (2022/04/29)**: Introduced Universal Proposition Bank 2.0 (UP2.0)
 
 **News (2022/01/01)**: UP1.0 Freeze ! 
 
