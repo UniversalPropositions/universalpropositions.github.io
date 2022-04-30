@@ -32,10 +32,6 @@ This is release v2.0 of the Universal Proposition Banks (UP) with significant en
 
 v2.0 is built upon [release 2.9 of the Universal Dependency Treebanks](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-4611). We use the frame and role labels from the [English Proposition Bank](http://propbank.github.io/) version [3.0](https://github.com/propbank/propbank-documentation/blob/master/other-documentation/Description-of-PB3-changes.md).
 
-## Multilingual SRL 
-
-Using this data, we can create SRL systems that predict English PropBank labels for many different languages. See a recent demo screencast of this SRL for English, French and German [**here**](https://vimeo.com/161718580). 
-
 
 ## Introduction
 
@@ -822,6 +818,7 @@ The Chinese verbs
     
 </div>
 
+Using this data, we can create SRL systems that predict English PropBank labels for many different languages. See a demo screencast of this SRL for English, French and German [**here**](https://vimeo.com/161718580). 
 
 
 ### Format 
@@ -833,6 +830,13 @@ The [conllup](https://universaldependencies.org/ext-format.html) format adds use
 - **UP:PRED** (column 11) contains predicate sense label for this predicate. This sense provides roleset specific meanings for each of its arguments, as defined in EN propbank.
 - **UP:ARGHEADS** (column 12) contains the argument heads for arguments of this predicate. Each argument is in the format `label:token_id`.  The arguments are separated by pipe `|` charactor.
 - **UP:ARGSPANS** (column 13) contains the argument spans for arguments of this predicate. Each argument is in the format `label:start_token_id-end_token_id`.  The arguments are separated by pipe `|` charactor.
+- 
+#### Repository
+A UP release contains treebanks of the corresponding UD release. Since UP is automatically generated silver data we also release hand annotated EN SRL labels for a subset of the lanaguges to facilitate the research community to perform fair evaluation of their multilingual and cross-lingual SRL systems. To differentiate Gold from UP data we use the following conventions:
+- `UP_<language>-<corpus>`
+- `GOLD_<language>-<corpus>`
+
+In addition, each language has a folder with verb overview files (produced from the frame files) in HTML format. These files can be viewed in a browser and give an overview of all English frames that each target language verb can evoke.
 
 #### Script
 We provide a python script to combine such a UP file with its corresponding UD file to produce the desired 13 column `.conllup` file. The script is available in [tools](https://github.com/UniversalPropositions/tools) repository: `up2/merge_ud_up.py`. 
@@ -853,12 +857,6 @@ An analogical execution with the specific UD_file and UP_file is presented below
 python3 up2/merge_ud_up.py input_ud=./tests/data/ud/hi/hi_hdtb-ud-dev.conllu --input_up=./tests/data/up/hi/hi_hdtb-up-dev.conllu --output=./tests/data/ud-up/hi/hi_hdtb-ud-up-dev.conllu
 ```
 
-#### Repository
-A UP release contains treebanks of the corresponding UD release. Since UP is automatically generated silver data we also release hand annotated EN SRL labels for a subset of the lanaguges to facilitate the research community to perform fair evaluation of their multilingual and cross-lingual SRL systems. To differentiate Gold from UP data we use the following conventions:
-- `UP_<language>-<corpus>`
-- `GOLD_<language>-<corpus>`
-
-In addition, each language has a folder with verb overview files (produced from the frame files) in HTML format. These files can be viewed in a browser and give an overview of all English frames that each target language verb can evoke.
 
 ### Scope
 
