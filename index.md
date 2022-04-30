@@ -830,7 +830,7 @@ The [conllup](https://universaldependencies.org/ext-format.html) format adds use
 - **UP:PRED** (column 11) contains predicate sense label for this predicate. This sense provides roleset specific meanings for each of its arguments, as defined in EN propbank.
 - **UP:ARGHEADS** (column 12) contains the argument heads for arguments of this predicate. Each argument is in the format `label:token_id`.  The arguments are separated by pipe `|` charactor.
 - **UP:ARGSPANS** (column 13) contains the argument spans for arguments of this predicate. Each argument is in the format `label:start_token_id-end_token_id`.  The arguments are separated by pipe `|` charactor.
-- 
+
 #### Repository
 A UP release contains treebanks of the corresponding UD release. Since UP is automatically generated silver data we also release hand annotated EN SRL labels for a subset of the lanaguges to facilitate the research community to perform fair evaluation of their multilingual and cross-lingual SRL systems. To differentiate Gold from UP data we use the following conventions:
 - `UP_<language>-<corpus>`
