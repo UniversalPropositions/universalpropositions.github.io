@@ -890,17 +890,17 @@ This is an ongoing project which we are improving along these lines:
 If you use UP in your work, please cite these papers:
 
 ```
-@InProceedings{jindal-etal-2022-UP20,
-  author = {Ishan Jindal and Alexandre Rademaker and Michał Ulewicz and Linh Ha and Huyen Nguyen and Khoi-Nguyen Tran and Huaiyu Zhu and Yunyao Li},
-  title = "{Universal Proposition Bank 2.0}",
-  booktitle = {Proceedings of the Thirteenth International Conference on Language Resources and Evaluation (LREC 2022)},
-  year = {2022},
-  month = {June 21-23, 2022},
-  address = {Marseille, France},
-  publisher = {European Language Resources Association (ELRA)},
-  isbn = {979-10-95546-72-6},
-  language = {english}
-  }
+@InProceedings{jindal-EtAl:2022:LREC,
+  author    = {Jindal, Ishan  and  Rademaker, Alexandre  and  Ulewicz, MichaÅ‚  and  Linh, Ha  and  Nguyen, Huyen  and  Tran, Khoi-Nguyen  and  Zhu, Huaiyu  and  Li, Yunyao},
+  title     = {Universal Proposition Bank 2.0},
+  booktitle      = {Proceedings of the Language Resources and Evaluation Conference},
+  month          = {June},
+  year           = {2022},
+  address        = {Marseille, France},
+  publisher      = {European Language Resources Association},
+  pages     = {1700--1711},
+  url       = {https://aclanthology.org/2022.lrec-1.181}
+}
 ```
 
 ```
@@ -924,7 +924,7 @@ If you use UP in your work, please cite these papers:
 ```
 ## Publications
 
-[Universal Proposition Bank 2.0](). Ishan Jindal, Alexandre Rademaker, Michał Ulewicz, Linh Ha, Huyen Nguyen, Khoi-Nguyen Tran, Huaiyu Zhu and Yunyao Li. *LREC2022.
+[Universal Proposition Bank 2.0](http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.181.pdf). Ishan Jindal, Alexandre Rademaker, Michał Ulewicz, Linh Ha, Huyen Nguyen, Khoi-Nguyen Tran, Huaiyu Zhu and Yunyao Li. *In Proceedings of the Language Resources and Evaluation Conference.* LREC2022.
 
 [Learning Explainable Linguistic Expressions with Neural Inductive Logic Programming for Sentence Classification](https://www.aclweb.org/anthology/2020.emnlp-main.345/). Prithviraj Sen, Marina Danilevsky, Yunyao Li, Siddhartha Brahma, Matthias Boehm, Laura Chiticariu and Rajasekar Krishnamurthy. *2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)* EMNLP 2020.
 
@@ -1014,12 +1014,13 @@ For questions, comments, and feedback, click on the `Feedback` link on the top o
 
 ### Gold Data
 
-- Gold data is  for 3 languages.
+- Gold data is  available for 3 languages.
 
 |ID | Language| Corpus| Notes|
 | -- | -- | -- | -- |
-|pt | Portuguese | [Bosque](https://github.com/UniversalPropositions/GOLD_Portuguese-Bosque) |  |
-|pl | Polish| [TrOntonotes](https://github.com/UniversalPropositions/GOLD_Polish-TrOntonotes) |  |
-|vi | Vietnamese| [Tatoeba](https://github.com/UniversalPropositions/GOLD_Vietnamese-Tatoeba) | Not yet available externally |
+|pt | Portuguese | [Bosque](https://github.com/UniversalPropositions/GOLD_Portuguese-Bosque) | Not yet available publically |
+|pl | Polish| [TrOntonotes](https://github.com/UniversalPropositions/GOLD_Polish-TrOntonotes) |  Available|
+|vi | Vietnamese| [Tatoeba](https://github.com/UniversalPropositions/GOLD_Vietnamese-Tatoeba) |  Available|
+
 
 
