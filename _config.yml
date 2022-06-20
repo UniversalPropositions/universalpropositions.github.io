@@ -44,7 +44,7 @@ feedback_email: ishan.jindal@ibm.com
 # feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-# feedback_link: "http://helpy.io/"
+feedback_link: "https://github.com/UniversalPropositions/docs/issues/new"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
