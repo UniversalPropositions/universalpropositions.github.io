@@ -957,7 +957,7 @@ If you use UP in your work, please cite these papers:
 ## People
 
 ### Contact
-For questions, comments, and feedback, click on the `Feedback` link on the top of this page. 
+For questions, comments, and feedback, click on the `Feedback` link on the top of this page and creata separate got issues for each comment. 
 
 ### Core Team
 
