@@ -957,7 +957,7 @@ If you use UP in your work, please cite these papers:
 ## People
 
 ### Contact
-For questions, comments, and feedback, click on the `Feedback` link on the top of this page and creata separate got issues for each comment. 
+For questions, comments, and feedback, click on the [Feedback](https://github.com/UniversalPropositions/docs/issues/new) link on the top of this page and create a separate git issues for each comment/feedback. 
 
 ### Core Team
 
