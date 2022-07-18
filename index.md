@@ -891,7 +891,7 @@ If you use UP in your work, please cite these papers:
 
 ```
 @InProceedings{jindal-EtAl:2022:LREC,
-  author    = {Jindal, Ishan  and  Rademaker, Alexandre  and  Ulewicz, Micha{\l}‚  and  Linh, Ha  and  Nguyen, Huyen  and  Tran, Khoi-Nguyen  and  Zhu, Huaiyu  and  Li, Yunyao},
+  author    = {Jindal, Ishan  and  Rademaker, Alexandre  and  Ulewicz, Micha{\l} and  Linh, Ha  and  Nguyen, Huyen  and  Tran, Khoi-Nguyen  and  Zhu, Huaiyu  and  Li, Yunyao},
   title     = {Universal Proposition Bank 2.0},
   booktitle      = {Proceedings of the Language Resources and Evaluation Conference},
   month          = {June},
